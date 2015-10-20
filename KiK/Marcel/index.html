@@ -1,0 +1,63 @@
+<html>
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+		
+		#plansza{
+			border-collapse: collapse ;
+			background-color: black ;
+		}
+		
+		#plansza td{
+			width: 100px;
+			height: 100px;
+			border: 6px solid white;
+		}
+		
+		.kolko {
+			background-image: url("kolko.jpg")
+		}
+		
+		.krzyzyk {
+			background-image: url("krzyzyk.jpg")
+		}
+
+		</style>
+		</head>
+	<body>
+<table id="plansza">
+  <tr>
+    <td onClick="wykonajRuch(this)"></td>
+    <td onClick="wykonajRuch(this)"></td>		
+    <td onClick="wykonajRuch(this)"></td>
+  </tr>
+  <tr>
+    <td onClick="wykonajRuch(this)"></td>
+	<td onClick="wykonajRuch(this)"></td>
+	<td onClick="wykonajRuch(this)"></td>
+  </tr>
+  <tr>
+    <td onClick="wykonajRuch(this)"></td>
+	<td onClick="wykonajRuch(this)"></td>
+	<td onClick="wykonajRuch(this)"></td>
+  </tr>
+</table>
+
+	<script>
+		var iloscRuchow=0;
+		function wykonajRuch(pole) {
+			if (pole.className!=""){
+				return
+			}
+			
+			iloscRuchow++;
+			if (iloscRuchow%2==0)
+				pole.className="kolko";
+			else
+				pole.className="krzyzyk";
+		}
+	</script>
+
+</body>
+</html>
