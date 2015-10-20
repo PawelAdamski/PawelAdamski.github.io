@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+#lol { 
+	border-collapse: collapse;
+	background-color:black;
+}
+#lol td {
+	width: 100px;
+	height: 100px;
+	border: 6px solid white;
+
+}
+
+.kolko {
+	background-image: url("aaaaa.jpg");
+}
+
+.krzyzyk{
+	background-image: url("bbbbb.jpg");
+
+
+}
+</style>
+
+<head>
+<body>
+<center><table border="1" id="lol">
+<tr>
+<td onClick="wykonajRuch(this)"> </td>
+<td onClick="wykonajRuch(this)"> </td>
+<td onClick="wykonajRuch(this)"> </td>
+</tr>
+<tr>
+<td onClick="wykonajRuch(this)"> </td>
+<td onClick="wykonajRuch(this)"> </td>
+<td onClick="wykonajRuch(this)"> </td>
+</tr>
+	<tr>
+	<td onClick="wykonajRuch(this)"> </td>
+	<td onClick="wykonajRuch(this)"> </td>
+	<td onClick="wykonajRuch(this)"> </td>
+	</tr>
+</table></center>
+<center><button data-toggle="collapse" data-target="#lol2" type="button" class="btn btn-danger">Autor</button>
+<button onClick="reset()" type="button" class="btn btn-primary">Restart</button> </center>
+<div id="lol2" class="collapse">
+<h1>ARKADIUSZ PRO AFYR</h1>
+</div>
+</body>
+
+<script>
+	var iloscRuchow=0;
+	function wykonajRuch(pole) {
+		if (pole.className!=""){
+		return
+		}
+		iloscRuchow++;
+		if (iloscRuchow%2==0)
+		pole.className="kolko";
+		else
+		pole.className="krzyzyk";
+
+	}
+		function reset(){
+			iloscRuchow=0;
+			$("td").removeClass("kolko krzyzyk")
+		
+		
+		}
+</script>
+
+
+
+
+
+
+</html>
