@@ -8,9 +8,11 @@
 <script src="sprawdzHaslo.js">
 </script>
 
+<div id="formularz">
+
 <form>
-<input type="password" id="haslo1">
-<input type="password" id="haslo2">
+<label for="haslo1">Hasło: </label> <input type="password" id="haslo1"><br>
+<label for="haslo2">Powtórz hasło: </label> <input type="password" id="haslo2"><br>
 </form>
 
 <ul>
@@ -20,8 +22,11 @@
 	<li id="znakSpecjalny"> Hasło zawiera znak specjalny</li>
 	<li id="dlugosc"> Hasło ma co najmniej 8 znaków</li>
 </ul>
-
+<br>
 <button onClick="sprawdz()">Sprawdz</button>
 
+
+
+</div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+.OK {
+	list-style-image: url("ok.png")
+}
+
+
+.BLAD {
+list-style-image: url("wrong.png")
+
+}
+
+* {
+	font-size: 16px;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+}
+
+
+form {
+	display:inline-block;
+	vertical-align: top;
+}
+
+ul  {
+	display:inline-block;
+	margin-top:0px;
+	margin-bottom:0px;
+	list-style-type: none;
+
+}
+
+ul li {
+		margin-bottom:4px;
+}
+
+#formularz {
+	padding:10px;
+	border:1px solid black;
+	width:600px;
+	background-color: lightblue;
+}
