@@ -1,0 +1,10 @@
+1. Przygotuj stronę WWW o treści.
+
+Wlazł kotek na płotek
+I mruga,
+Ładna to piosenka,
+Niedługa.
+
+2. Kolor tła zdefiniuj w pliku zewnętrznym i wstaw go na stronę. Użyj w tym celu polecenia rgb.
+3. Kolor tekstu zdefiniuj jako styl wewnętrzny. Użyj w tym celu notacji szestankowej (z # na początku)
+4. Słowa "Kotek" oraz "piosenka" powinny być napisane czionką rozmiaru 20px (właściwość font-size)
