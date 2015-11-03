@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+	.OK {color:green}
+	.BLAD {color:red}
+
+</style>
+
+</head>
+<body>
+
+	<script>
+	function sprawdz(){
+		var haslo1 = document.getElementById("haslo1").value;
+		var haslo2 = document.getElementById("haslo2").value;
+
+		var takieSame = document.getElementById("takieSame");
+		var litera = document.getElementById("litera");
+		var cyfra = document.getElementById("cyfra");
+
+		if (haslo1===haslo2) {
+			takieSame.className="OK";
+		} else {
+			takieSame.className="BLAD";
+		}
+
+		if (czySaLiterki(haslo1)){
+			litera.className="OK";
+		} else {
+			litera.className="BLAD";
+		}
+	}
+
+	function czySaLiterki(haslo){
+		for (var i=0;i<haslo.length;i++){
+			if (czyLiterka(haslo.charAt(i))) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	function czyLiterka(znak){
+		return znak==="a" || znak==="A" ||
+			   znak==="b" || znak==="B" ||
+			   znak==="c" || znak==="C" ||
+			   znak==="d" || znak==="D" ||
+			   znak==="e" || znak==="E" ||
+			   znak==="f" || znak==="F" ||
+			   znak==="g" || znak==="G";
+	}
+
+
+	</script>
+
+
+
+	<form>
+		<input type="password" id="haslo1">
+		<input type="password" id="haslo2">
+	</form>
+
+	<button onclick="sprawdz()">Sprawdź</button>
+
+	<ul>
+		<ol id="takieSame">Hasła są takie same</ol>
+		<ol id="litera">Hasło zawiera litere</ol>
+		<ol id="cyfra">Hasło zawiera cyfrę</ol>
+	</ul>
+
+</body>
+</html>

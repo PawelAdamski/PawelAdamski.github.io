@@ -1,0 +1,9 @@
+pierwsza litera w akapicie:
+    wielkość czcionki 300%
+    kolor brązowy
+    border: 2px black solid
+    float: left
+    margin-right: 5px
+    
+pierwszy wiersz w akapicie:
+	podkreślony

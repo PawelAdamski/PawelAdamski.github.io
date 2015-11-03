@@ -1,0 +1,13 @@
+Przygotuj stronę WWW z wybranym przez ciebie tekstem (polecam "Pan Tadeusz"). 
+Następnie poczytaj o poniższych właściwościach (polecam http://kodcss.pl/ sekcja tekst) i każdej z nich użyj na dwa sposoby.
+Pamiętajcie o tym aby wasz tekst znajdował się w akapitach
+
+text-indent
+text-align
+text-decoration
+letter-spacing 
+word-spacing
+text-transform
+white-space
+color
+text-shadow

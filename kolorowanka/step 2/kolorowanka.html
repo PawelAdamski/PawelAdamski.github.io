@@ -1,0 +1,201 @@
+<html>
+<head>
+	<style>
+
+	#wybranyKolor {
+		margin-top:10px;
+		width:80px;
+		height:80px;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+	#menu img {
+		display:block;
+		width:60px;
+		background-color:grey;
+		margin-bottom:10px;
+	}
+
+	body {
+		background-color:grey;
+		margin:0px;
+	}
+
+	#menu img:hover {
+		outline:1px black solid;
+	}
+	#menu img{
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+	#menu {
+		background-color: lightgrey;
+		float:left;
+		padding:20px;
+		border-right: 2px solid black;
+		height:100%;
+	}
+
+	#paleta td {
+		width:40px;
+		height: 40px;
+		border-width: 0px;
+		margin: 0px;
+		padding:0px;
+
+	}
+
+	#plutno td {
+		border-width: 0px;
+		margin: 0px;
+		padding:0px;
+		
+
+	}
+
+	.rozmiar30 td{
+		width:30px;
+		height: 30px;
+	}
+
+	.rozmiar40  td{
+		width: 40px;
+		height: 40px;
+	}
+
+	.rozmiar50  td{
+		width: 50px;
+		height: 50px;
+	}
+
+	.rozmiar20  td{
+		width:20px;
+		height: 20px;
+	}
+	.rozmiar10  td{
+		width:10px;
+		height: 10px;
+	}
+
+
+	#plutno {
+		border-collapse:collapse;
+		background-color: white;
+	}
+
+	.czerwony {
+		background-color: red;
+	}
+
+	.zielony {
+		background-color: green;
+	}
+
+	.zolty {
+		background-color: yellow;
+	}
+
+	.czarny {
+		background-color: black;
+	}
+
+	.niebieski { 
+		background-color: blue;
+	}
+
+	.bialy {
+		background-color:white;
+	}
+	.rozowy{
+		background-color: pink;	
+	}
+
+	.zielony {
+		background-color:green;
+	}
+	.brazowy{
+		background-color: brown;	
+	}
+	</style>
+</head>
+<body>
+
+<script>
+var kolor="czerwony";
+var rozmiar=30
+function koloruj(pole,event){
+	if (event.which===1) {
+		pole.className=kolor;	
+	}
+}
+
+function zmienKolor(wybrany){
+	kolor=wybrany.className;
+	document.getElementById("wybranyKolor").className=kolor;
+}
+
+function mniejszy(){
+	if (rozmiar==10) {
+		return
+	}
+	rozmiar-=10;
+	document.getElementById("plutno").className = "rozmiar"+rozmiar;
+}
+
+function wiekszy(){
+	if (rozmiar==50){
+		return
+	}
+	rozmiar+=10;
+	document.getElementById("plutno").className = "rozmiar"+rozmiar;
+}
+
+function nowy() {
+	location.reload();
+}
+
+function drukuj(){
+	window.print();
+}
+</script>
+
+<div id="menu">
+
+<table id="paleta">
+<tr><td class="niebieski" onclick="zmienKolor(this)"><td class="czarny"onclick="zmienKolor(this)"> 
+<tr><td class="czerwony" onclick="zmienKolor(this)"><td class="zolty" onclick="zmienKolor(this)">
+<tr><td class="bialy" onclick="zmienKolor(this)"><td class="rozowy" onclick="zmienKolor(this)">
+<tr><td class="zielony" onclick="zmienKolor(this)"><td class="brazowy" onclick="zmienKolor(this)">
+</table>
+
+<div id="wybranyKolor" class="czerwony">
+</div>
+
+</div>
+
+<table id="plutno" class="rozmiar30">
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+<tr><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"><td onClick="koloruj(this,event)" onMouseEnter="koloruj(this,event)"></tr>
+</table> 
+
+</body>
+</html>
