@@ -1,0 +1,129 @@
+<html>
+
+
+
+<body>
+	<canvas id="plansza" width="480" height="320">
+	</canvas>
+
+	<script>
+
+	function prostokat(x,y,szerokosc,wysokosc,kolor) {
+		var plansza = document.getElementById("plansza");
+		var ctx = plansza.getContext("2d");
+
+		ctx.beginPath();
+		ctx.rect(x,y,szerokosc,wysokosc);
+		ctx.fillStyle=kolor;
+		ctx.fill();
+		ctx.closePath();
+
+	}
+
+	function kolo(x,y,r,kolor) {
+		var plansza = document.getElementById("plansza");
+		var ctx = plansza.getContext("2d");
+
+		ctx.beginPath();
+ 		ctx.arc(x, y, r, 0, Math.PI*2, false);
+    	ctx.fillStyle = kolor;
+    	ctx.fill();
+		ctx.closePath();
+
+	}
+
+	function wyczysc(){
+		var plansza = document.getElementById("plansza");
+		var ctx = plansza.getContext("2d");
+		ctx.clearRect(0, 0, plansza.width, plansza.height);
+	}
+
+	var x = 30;
+	var y = 30;
+	var dy = 3;
+	var dx = 3;
+
+	var gracz1y=50;
+	var gracz2y=50;
+	var szerokoscGracza=50;
+	var wysokoscGracza=150;
+	var plansza = document.getElementById("plansza");
+
+	var gracz1Gora;
+	var gracz1Dol;
+
+	function guzikWcisniety(e) {
+		console.info(e.keyCode)
+		if (e.keyCode==65){ //"A"
+   			gracz1Gora = true;
+   		}
+   		if (e.keyCode==90){ //"Z"
+   			gracz1Dol = true;
+   		}
+	}
+
+	function guzikPuszczony(e) {
+		console.info(e.keyCode)
+		if (e.keyCode==65){ //"A"
+   			gracz1Gora = false;
+   		}
+   		if (e.keyCode==90){ //"Z"
+   			gracz1Dol = false;
+   		}
+	}
+
+	document.addEventListener("keydown",guzikWcisniety)
+	document.addEventListener("keyup",guzikPuszczony)
+
+	function rysujGracz1() {
+		prostokat(0,gracz1y,szerokoscGracza,wysokoscGracza,"green");
+
+		if (gracz1Gora){
+			gracz1y -=2;
+		}
+		if (gracz1Dol){
+			gracz1y +=2;
+		}
+	}
+
+	function rysujGracz2() {
+		prostokat(plansza.width-szerokoscGracza,gracz2y,szerokoscGracza,wysokoscGracza,"yellow");
+	}
+
+	function rysuj(){
+
+		wyczysc();
+		rysujGracz1();
+		rysujGracz2();
+
+		kolo(x,y,30,"blue");
+		x+=dx;
+		y+=dy;
+
+		if (y>plansza.height || y<0){
+			dy*=-1;
+		}
+		
+		if ( x<=szerokoscGracza) {
+
+			if (y>=gracz1y && y<=gracz1y+wysokoscGracza) {
+				dx*=-1;
+			} else {
+				alert("Gracz 2 wygrał");
+				location.reload();
+			}
+
+		}
+
+		if (x>plansza.width ){
+			dx*=-1;
+		}
+	}
+
+	setInterval(rysuj,10);
+		
+	</script>
+
+</body>
+
+</html>

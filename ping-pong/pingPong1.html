@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta charset="utf-8" />
+	 <title>Ping Pong</title>
+	<style>
+		#plansza {
+		
+			background-color:grey;
+		}
+	</style>
+	</head>
+	<body>
+	<canvas id="plansza" width="480" height="320">
+	</canvas>
+	<script>
+		var canvas = document.getElementById("plansza");
+   		var ctx = canvas.getContext("2d");
+		
+	ctx.beginPath();
+	ctx.rect(10,20,100,200);
+	ctx.fillStyle="#10AAC3";
+	ctx.fill();
+	ctx.closePath();	
+	</script>
+	</body>
+</html>

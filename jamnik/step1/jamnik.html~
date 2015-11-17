@@ -1,0 +1,38 @@
+<html>
+
+<style>
+
+img{
+	margin:0px;
+	height:200px;
+}
+
+
+div {
+	width:18%;
+	display:inline-block;
+	border:1px black solid;
+	background-color: lightgreen;
+
+}
+body {
+	background-color:green;
+}
+
+</style>
+
+
+
+
+<body>
+	<div id="div1" style="height:20px"></div><div id="div2" style="height:40px"></div><div id="div3" style="height:60px"></div><div id="div4" style="height:80px"></div><div id="div5" style="height:100px"></div>
+
+<hr>
+
+	<img   src="tyl.png"/><img id="tolow" src="tolow.png" /><img src="glowa.png"/>
+
+
+	
+</body>
+
+</html>

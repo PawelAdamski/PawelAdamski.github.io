@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta charset="utf-8" />
+	 <title>Ping Pong</title>
+	<style>
+		#plansza {
+			background-color:grey;
+		}
+	</style>
+	</head>
+	<body>
+	<canvas id="plansza" width="480" height="320">
+	</canvas>
+	<script>
+		document.addEventListener("keydown",guzikWcisniety)
+		document.addEventListener("keyup",guzikPuszczony)
+
+		var canvas = document.getElementById("plansza");
+   		var ctx = canvas.getContext("2d");
+   		var x = canvas.width/2;
+   		var y = canvas.height/2;
+   		var dx = 2; 
+   		var dy = 2;
+
+   		var gracz1Gora;
+   		var gracz2Gora;
+   		var gracz1Dol;
+   		var gracz2Dol;
+
+   		var gracz1Pozycja = 50;
+   		var gracz2Pozycja = 50;
+   		var szerokoscGracza=30;
+   		var dlugoscGracza=100;
+		
+   		function guzikWcisniety(e){
+   			console.info(e.keyCode)
+   			if (e.keyCode==65){
+   				gracz1Gora = true;
+   			}
+   			if (e.keyCode==90){
+   				gracz1Dol = true;
+   			}
+
+   			if (e.keyCode==75){
+   				gracz2Gora = true;
+   			}
+   			if (e.keyCode==77){
+   				gracz2Dol = true;
+   			}
+   		}
+
+   		function guzikPuszczony(e){
+   		   	if (e.keyCode==65){
+   				gracz1Gora = false;
+   			}
+   			if (e.keyCode==90){
+   				gracz1Dol = false;
+   			}
+
+   			if (e.keyCode==75){
+   				gracz2Gora = false;
+   			}
+   			if (e.keyCode==77){
+   				gracz2Dol = false;
+   			}
+   		}
+
+		function drawBall(){
+			ctx.beginPath();
+			ctx.arc(x, y, 10, 0, Math.PI*2);
+			ctx.fillStyle="blue";
+			ctx.fill();
+			ctx.closePath();
+		}	
+
+		function drawGracz1(){
+			ctx.beginPath();
+			ctx.rect(0,gracz1Pozycja,szerokoscGracza,dlugoscGracza);
+			ctx.fillStyle="#10AAC3";
+			ctx.fill();
+			ctx.closePath();				
+		}
+
+		function drawGracz2(){
+			ctx.beginPath();
+			ctx.rect(canvas.width-szerokoscGracza,gracz2Pozycja,szerokoscGracza,dlugoscGracza);
+			ctx.fillStyle="#10AAC3";
+			ctx.fill();
+			ctx.closePath();				
+		}
+
+		function draw(){
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			drawBall();
+			drawGracz1();
+			drawGracz2();
+			x+=dx;
+			y+=dy;
+			if (y>canvas.height || y<0) {
+				dy*=-1;
+				
+			}
+			if (x>canvas.width || x<0) {
+				dx*=-1;
+			}
+
+			if (x<szerokoscGracza) 
+				if ( y>gracz1Pozycja && y<gracz1Pozycja+dlugoscGracza) {
+					dx*=-1;
+				} else {
+					alert("Wygral gracz drugi");
+					location.reload();
+				}
+
+
+			if (x>canvas.width-szerokoscGracza)
+				if ( y>gracz2Pozycja && y<gracz2Pozycja+dlugoscGracza) {
+					dx*=-1;
+				} else {
+					alert("Wygral gracz pierwszy");
+					location.reload();					
+				}
+
+			if ( gracz1Gora ){
+				gracz1Pozycja-=3;
+			}
+
+			if ( gracz1Dol ){
+				gracz1Pozycja+=3;
+			}
+
+			if ( gracz2Gora ){
+				gracz2Pozycja-=3;
+			}
+
+			if ( gracz2Dol ){
+				gracz2Pozycja+=3;
+			}
+
+		}
+
+		setInterval(draw,10);
+	</script>
+	</body>
+</html>
