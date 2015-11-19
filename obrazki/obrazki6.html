@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+<canvas width="800" height="800" id = "canvas">
+</canvas> 
+
+<script>
+	function prostokat(x,y,width,height,color) {
+	var canvas = document.getElementById("canvas");
+   	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(x,y,width,height);
+	ctx.fillStyle=color;
+	ctx.fill();
+	ctx.closePath();   	
+	}
+
+	function rysuj(){
+		var canvas = document.getElementById("canvas");
+   		var ctx = canvas.getContext("2d");
+
+		for (var x=0;x<8;x++) {
+				prostokat(x*100,canvas.height-x*100-100,100,x*100+100,"yellow");
+		}
+	}
+
+	rysuj();	
+
+</script>
+
+</body>
+</html>`

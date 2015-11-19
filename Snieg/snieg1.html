@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta charset="utf-8" />
+	 <title>Ping Pong</title>
+	<style>
+		* { margin: 0; padding: 0;}
+
+		body, html { height:100%; }
+
+		#plansza {
+			background-color:darkblue;
+		}
+	</style>
+	</head>
+	<body>
+	<canvas id="plansza" width="800" height="800"></canvas>
+	<script>
+		var canvas = document.getElementById("plansza");
+   		var ctx = canvas.getContext("2d");
+		var tab=new Array(canvas.width)
+		for (i=0; i <canvas.width; i++)
+			tab[i]=new Array(canvas.height);
+		for (var i=0;i<tab.length;i++)
+			for (var j=0;j<tab[i].length;j++)
+				tab[i][j] = "";
+
+   		function wyczysc(){
+ 			ctx.clearRect(0, 0, canvas.width, canvas.height);
+   		}
+   		
+   		function przesunWDol() {
+   			for (var i=0;i<tab.length;i++)
+				for (var j=tab[i].length-2;j>=0;j--) {
+					if (tab[i][j]!="") {
+						if (tab[i][j+1]=="") {
+							tab[i][j+1] = tab[i][j];
+						}  else {
+							tab[i][j] = "";
+						}
+
+					} 
+					
+				}
+   		}
+
+   		function nowyWiersz() {
+   			for (var x=0;x<tab.length;x++){
+   				if (Math.random() * 1000<2) {
+   					tab[x][0] = "white";
+   				} else {
+   					tab[x][0] = "";
+   				}
+   			}
+   		}
+
+   		function piksel(x,y,kolor){
+			 ctx.beginPath();
+			 ctx.rect(x, y, 1, 1); 
+			 ctx.closePath();
+			 ctx.fillStyle=kolor;
+			 ctx.fill();
+
+   		}
+   		
+
+   		function pokaz(){
+   			
+   			for (var x=0;x<tab.length;x++)
+   				for (var y=0;y<tab[x].length;y++)
+   					if (tab[x][y]!="") {
+   						piksel(x,y,tab[x][y]);
+   					}
+   			
+   		}
+
+
+		function rysuj(){
+			wyczysc();
+			przesunWDol();
+			nowyWiersz();
+			pokaz();
+		}
+
+		setInterval(rysuj,10);
+
+	</script>
+	</body>
+</html>

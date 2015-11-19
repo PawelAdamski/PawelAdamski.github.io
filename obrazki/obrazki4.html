@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+Rozmiar szachownicy: <input type="number" id="rozmiar" > <button onclick="rysuj()">Rysuj</button>
+<br/>
+<canvas width="800" height="800" id = "canvas">
+</canvas> 
+
+<script>
+	function prostokat(x,y,width,height,color) {
+	var canvas = document.getElementById("canvas");
+   	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(x,y,width,height);
+	ctx.fillStyle=color;
+	ctx.fill();
+	ctx.closePath();   	
+	}
+
+	function rysuj(){
+		var canvas = document.getElementById("canvas");
+   		var ctx = canvas.getContext("2d");
+   		ctx.clearRect(0, 0, canvas.width, canvas.height);
+   		
+		var n = document.getElementById("rozmiar").value;
+		for (var x=0;x<n;x++)
+			for (var y=0;y<n;y++){
+				var kolor = "blue";
+				if ((x+y)%2==0){
+					kolor="yellow";
+				}
+				prostokat(x*100,y*100,100,100,kolor);
+			}
+	}
+
+</script>
+
+</body>
+</html>`

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+<canvas width="800" height="800" id = "canvas">
+</canvas> 
+
+<script>
+	function prostokat(x,y,width,height,color) {
+	var canvas = document.getElementById("canvas");
+   	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(x,y,width,height);
+	ctx.fillStyle=color;
+	ctx.fill();
+	ctx.closePath();   	
+	}
+
+	for (var x=0;x<8;x++)
+		for (var y=0;y<8;y++){
+			var kolor = "blue";
+			if ((x+y)%2==0){
+				kolor="yellow";
+			}
+			prostokat(x*100,y*100,100,100,kolor);
+		}
+
+</script>
+
+</body>
+</html>`
