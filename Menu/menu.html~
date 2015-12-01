@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<style>
+		ul{
+			list-style: none;
+			background-color: #6898d0;
+			width:200px;
+			color: #333;
+			padding:0px;
+		}
+		
+		li {
+			border-bottom: 1px solid black;
+			padding: 5px;
+			border-left: 5px solid grey;
+			border-right: 5px solid grey;
+		}
+		
+		li:hover {
+			border-left: 5px solid orange;
+			border-right: 5px solid orange;
+			background-color: #FF7C3E;
+		}
+		
+		#header {
+			background-color: grey;
+			font-style:italic;
+		}
+
+		a{
+		color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+ <ul>
+    <li><a title="Home" href="#">Home</a></li>
+    <li><a title="Photos" href="#">Photo Gallery</a></li>
+    <li><a title="Events" href="#">Events Calendar</a></li>
+    <li><a title="Forum" href="#">Community</a></li>
+    <li><a title="Articles" href="#">Article Directory</a></li>
+    <li><a title="Link Directory" href="#">Link Directory</a></li>
+    <li><a title="Download" href="#">Freeware Download</a></li>
+  </ul>
+
+
+</body>
+</html>

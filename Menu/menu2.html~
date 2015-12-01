@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<style>
+		ul{
+			list-style: none;
+			padding:0px;
+		}
+		
+		a{
+		color: #fff;
+		text-decoration:none;
+		}
+	</style>	
+</head>
+<body>
+
+ <ul>
+    <li><a title="Home" href="#">Home</a></li>
+    <li><a title="Photos" href="#">Photo Gallery</a></li>
+    <li><a title="Events" href="#">Events Calendar</a></li>
+    <li><a title="Forum" href="#">Community</a></li>
+    <li><a title="Articles" href="#">Article Directory</a></li>
+    <li><a title="Link Directory" href="#">Link Directory</a></li>
+    <li><a title="Download" href="#">Freeware Download</a></li>
+  </ul>
+
+
+</body>
+</html>
