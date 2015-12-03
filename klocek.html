@@ -1,0 +1,105 @@
+<html>
+
+
+<head>
+<meta charset="utf8"/>
+<style>
+body {
+	margin:0px;
+    overflow:hidden;
+}
+.odliczanie{
+	width: 100%;
+	height: 100%;
+	padding-top:300px;
+	font-size:16em;
+	color:gold;
+	background-color: darkblue;	
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px; 
+}
+.blueScreen{
+	width: 100%;
+	height: 100%;
+	background-image: url("blueScreen.jpg");
+	background-size: cover;
+}
+
+#klocek {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;   
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#stopka {
+	position: fixed;
+	display: block;
+	bottom:0px;
+	text-align: center;
+	width:100%;
+	color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<script  src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://paweladamski.github.io/dynamicCSS.js"></script>
+
+<div id="screen1" class="odliczanie">3</div>
+
+<div id="screen2" class="odliczanie" style="display:none">2</div>
+
+<div id="screen3" class="odliczanie" style="display:none">1</div>
+
+
+<div id="screen4">
+	<div id="klocek"></div>
+</div>
+
+<div id="screen5" class="blueScreen" style="display:none"></div>
+
+
+<div id="stopka">
+	Proszę włączyć tryb pełnoekranowy
+</div>
+
+<script>
+
+
+$("#screen1").delayCss(2000,'display', 'none');
+
+$("#screen2").delayCss(2000,'display', 'block')
+			 .delayCss(2000,'display', 'none');
+
+$("#screen3").delayCss(4000,'display', 'block')
+			 .delayCss(2000,'display', 'none');
+
+$("#screen4").delayCss(6000,'display', 'block')
+			 .delayCss(4000,'display', 'none');
+	
+$("#screen5").delayCss(10000,'display', 'block');
+
+$("#stopka").delayCss(6000,'display','none');
+
+</script>
+
+
+
+</body>
+</html>
