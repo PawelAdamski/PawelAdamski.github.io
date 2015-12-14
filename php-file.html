@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Paweł Adamski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Paweł Adamski</h1>
+    </section>
+
+    <section class="main-content">
+<table>
+<tr>
+<th>Funkcja</th>
+<th>Opis</th>
+<th>Przykład</th>
+</tr>
+<tr>
+	<td>fopen</td>
+	<td>Otwiera plik i zwraca "uchwyt" do niego.<br/>
+	Trzy podstawowe tryby otwierania pliku:
+	<ul>
+	<ol>w - do zapisu</ol>
+	<ol>r - do odczyty</ol>
+	<ol>a - do dopisywania</ol>
+	</ul>
+	<td> <pre>$plik = fopen("lista.txt","w");</pre>
+	<pre>$dane = fopen("dane/osoby/pawel.txt","r");</pre>
+	<pre>$konto = fopen("../bank/konto.txt","a");</pre>
+	</td>
+</tr>
+<tr>
+	<td>fgets</td>
+	<td>Wczytuje z pliku pojedynczą linię.</td>
+	<td><pre>$plik = fopen("dane/osoby/pawel.txt","r");
+$pierwszaLinia = fgets($plik);
+$drugaLinia = fgets($plik);
+</pre>
+</td>
+</tr>
+<tr>
+	<td>fclose</td>
+	<td>Zamyka plik</td>
+	<td><pre>$plik = fopen("dane/osoby/pawel.txt","r");
+fclose($plik);
+</pre>
+</td>
+</tr>
+<tr>
+	<td>eof</td>
+	<td><pre>eof = End Of File</pre>
+Sprawdza czy został już przeczytany cały plik.
+</td>
+<td><pre>$plik = fopen("dane/osoby/pawel.txt","r");
+while(!feof($plik)) {
+  echo fgets($plik);
+}
+fclose($plik);
+</pre>
+</td>
+</tr>
+<tr>
+<td>readfile</td>
+<td>Wczytuje cały plik</td>
+<td><pre>$plik = fopen("dane/osoby/pawel.txt","r");
+$tresc = readfile($plik);
+echo $tresc;
+fclose($plik);
+</pre>
+</tr>
+</table>
+
+   </section>
+   
+
+  </body>
+</html>

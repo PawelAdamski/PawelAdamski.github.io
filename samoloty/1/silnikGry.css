@@ -1,0 +1,27 @@
+
+.wynik:after{
+ content: counter(birds);
+}
+
+
+
+input:checked{
+  counter-increment:birds;
+}
+
+
+#stopka {
+	height: 4.5em;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	border-top:darkblue px solid;
+}
+
+.wynik {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 4em;
+}
+

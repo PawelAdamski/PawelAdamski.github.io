@@ -1,0 +1,33 @@
+#w1 {
+	top:5px;
+	animation-delay: -6s;
+  	font-size:3em; 
+}
+
+#w2 {
+	top:115px;
+	animation-delay: -10s;
+  	font-size:5em; 
+}
+
+#w3 {
+	top:225px;
+	animation-delay: -22s;
+  	font-size:3em; 
+}
+
+#w4 {
+	top:335px;
+	animation-delay: -14s;
+  	font-size:5em; 
+}
+
+#w5 {
+	top:405px;
+	animation-delay: -26s;
+  	font-size:5em; 
+}
+
+#w6 {
+	top:505px;
+}

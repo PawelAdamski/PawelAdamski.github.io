@@ -1,0 +1,70 @@
+
+.wynik:after{
+ content: counter(birds);
+}
+
+
+input:checked{
+  counter-increment:birds;
+}
+
+@keyframes example {
+    0% {left: 0%;
+    	transform: rotate(0deg);
+    }
+    45% {left: 80%;
+    	 transform: rotate(0deg);
+    }
+    50% {left: 80%;
+    	 transform: rotate(180deg);
+    }
+    90% {left: 0%;
+		transform: rotate(180deg)    	
+    }
+    100% {left: 0%;
+		transform: rotate(0deg)    	
+    }
+}
+
+/* The element to apply the animation to */
+label {
+    position: absolute;
+    font-size:5em;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 1;
+ 
+}
+input {
+	position: fixed;
+	left:-30px;
+}
+
+
+#i1:checked ~ #w1,
+#i2:checked ~ #w2,
+#i3:checked ~ #w3,
+#i4:checked ~ #w4,
+#i5:checked ~ #w5,
+#i6:checked ~ #w6 {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#stopka {
+	height: 4.5em;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	border-top:darkblue px solid;
+}
+
+.wynik {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 4em;
+}
+

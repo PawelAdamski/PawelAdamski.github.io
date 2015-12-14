@@ -1,7 +1,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+</head>
 <body>
-	Przygotuj stronę, która wypisze tekst "Klasa 4e"
+<?php
+	echo readfile("panTadeusz.txt");
+?>
 </body>
 </html>
