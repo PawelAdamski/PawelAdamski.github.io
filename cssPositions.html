@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Paweł Adamski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Paweł Adamski</h1>
+    </section>
+
+    <section class="main-content">
+
+<h2>Position</h2>
+  <ul>
+<li>static - zachowanie domyślne
+<li>relative - zachowanie domyślne plus przesunięcie
+<li>absolute - pozycja ustalona względem rodzica
+<li>fixed - pozycja ustalona
+</ul>
+
+<h2>Przesunięcie</h2>
+<ul>
+<li>top - odsunięcie od góry
+<li>right - odsunięcie od prawej
+<li>bottom - odsunięcie od dołu
+<li>left - odsunięcie od lewej
+</ul>
+
+<table>
+<tr>
+<td>
+<div id="rodzic" style="width:500px;height:500px;background-color:orange;position:relative">
+
+<div id="dziecko" style="width:50px;height:50px;background-color:red">
+</div>
+
+</div>
+</td>
+<td width = 200>
+<script src="https://code.jquery.com/jquery-2.1.4.js">
+</script>
+<form action="">
+<input type="radio" name="position" 
+onclick="$('#dziecko').css('position','static');">static<br>
+
+<input type="radio" name="position" 
+onclick="$('#dziecko').css('position','relative');">relative<br>
+<input type="radio" name="position" 
+onclick="$('#dziecko').css('position','absolute');">absolute<br>
+<input type="radio" name="position" 
+onclick="$('#dziecko').css('position','fixed');">fixed<br>
+<br>
+
+left: <input 
+onchange="$('#dziecko').css('left',this.value);"><br>
+right: <input 
+onchange="$('#dziecko').css('right',this.value);"><br>
+top: <input 
+onchange="$('#dziecko').css('top',this.value);"><br>
+bottom: <input 
+onchange="$('#dziecko').css('bottom',this.value);"><br>
+
+</form>
+</td>
+</tr>
+</table>
+
+
+Więcej informacji na stronie <a href="http://kodcss.pl/kurs-css/wlasciwosci/pozycja/position">kodcss.pl</a>
+
+</section>
+   
+
+  </body>
+</html>

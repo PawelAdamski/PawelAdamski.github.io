@@ -15,7 +15,16 @@
     </section>
 
     <section class="main-content">
-<a href="php-file.html">Obłsuga plików w PHP</a>
+
+<a href="Galeria/g1.png">Galeria 1</a></br>
+<a href="Galeria/g2.png">Galeria 2</a></br>
+<a href="Galeria/g3.png">Galeria 3</a></br>
+<a href="Galeria/g4.png">Galeria 4</a></br>
+<hr/>
+
+
+
+<a href="php-file.html">Obłsuga plików w PHP</a></br>
 <a href="formularze-php.html">Obłsuga formularzy w PHP</a>
 <hr/>
 
