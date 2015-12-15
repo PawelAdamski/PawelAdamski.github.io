@@ -27,15 +27,13 @@ fclose($myfile);
 	  echo '<li>'.fgets($plik);
 	}
 	fclose($plik);
-
+	echo '</ol>';
 ?>
 
 	<form method="POST" action="dodaj.php">
 		<input name="produkt"/>
 		<input type="submit"/>
 	</form>
-<?php
-		echo '<ol>';
-?>
+
 </body>
 </html>

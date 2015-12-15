@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+		#Notatka{
+			border:2px black solid;
+			background-color:yellow;		
+			color:black;
+			width:200px;
+			height:200px;
+			position:fixed;
+			left:20px;
+			top:100px;
+		}
+		
+		.questionMark {
+			width:40px;
+			height:40px;
+			font-size:30px;
+			padding:5px;
+			text-align:center;	
+			vertical-align:middle;	
+			background-color: rgba(0,0,0,0.5);
+			font-weight: 800;
+			color:white;
+		}
+		
+		.opis {
+			font-weight: 800;
+			padding: 10px 20px;
+			background-color: rgba(0,0,0,0.75);
+			color:white;
+			width:150px;
+			height:50px;
+			text-align:center;	
+			vertical-align:middle;	
+			
+		}
+	</style>
+
+</head>
+<body style="background-color:grey">
+<center>
+<h1 style="color:white">
+Galeria obrazów
+</h1>
+	<table>
+	<tr>
+		<td>
+			<div class="obrazek">
+				<img src="las.jpg"/>
+				<div class="questionMark">?</div>
+				<div class="opis">Piękny las</div>
+			</div>
+		</td>
+		<td>
+			<div class="obrazek">
+				<img src="sad.jpg"/>
+				<div class="questionMark">?</div>
+				<div class="opis">Sad dzikich jabłoni</div>
+			</div>
+		</td>
+	</tr>
+	<tr><td>
+	<div class="obrazek">
+		<img src="pole.jpg"/>
+		<div class="questionMark">?</div>
+		<div class="opis">Zachód słońca nad polami pszenicy</div>
+	</div>
+	<td>
+	<div class="obrazek">
+		<img src="droga.jpg"/>
+		<div class="questionMark">?</div>
+		<div class="opis">Bieszczadzkie bezdroża</div>
+	</div>	
+	</center>
+</body>
+
+<div id="Notatka">
+	<ol>
+	<li>Ustal rozmiary wszystkich div-ów</li>
+	<li>Tło dla znaku zapytania: <strong>rgba(0,0,0,0.5)</strong></li>
+	<li>Tło dla opisu: <strong>rgba(0,0,0,0.75)</strong></li>
+</div>
+
+</html>

@@ -16,7 +16,7 @@
 	  echo '<li>'.fgets($plik);
 	}
 	fclose($plik);
-
+	echo '</ol>';
 ?>
 
 	<form method="POST" action="dodajDoKoszyka.php">
@@ -24,6 +24,6 @@
 		<input type="submit" value="Dodaj"/>
 	</form>
 
-		echo '</ol>';
+		
 </body>
 </html>

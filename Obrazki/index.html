@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+		.questionMark {
+			position:absolute;
+			bottom:0px;
+			right:0px;
+			background-color:grey;
+			width:40px;
+			height:40px;
+			font-size:30px;
+			padding:5px;
+			text-align:center;	
+			vertical-align:middle;	
+			background-color: rgba(0,0,0,0.5);
+			font-weight: 800;
+			color:white;
+		    transition:opacity 2s;
+		}
+		
+		.opis {
+			position:absolute;
+			font-weight: 800;
+			padding: 10px 20px;
+			bottom:0px;
+			right:0px;
+			background-color: rgba(0,0,0,0.75);
+			color:white;
+			width:150px;
+			height:50px;
+			text-align:center;	
+			vertical-align:middle;	
+			opacity:0;
+		    transition:opacity 2s;
+			
+		}
+		
+		.obrazek:hover .questionMark {
+			opacity:0;
+		}
+		
+		.obrazek:hover .opis {
+			opacity:1;
+		}
+	
+		.obrazek{
+			width:350px;
+			height:350px;
+			margin:15px;
+			position:relative;
+		}
+	 
+	</style>
+
+</head>
+<body style="background-color:grey">
+<center>
+<h1 style="color:white">
+Galeria obrazów
+</h1>
+	<table>
+	<tr>
+		<td>
+			<div class="obrazek">
+				<img src="las.jpg"/>
+				<div class="questionMark">?</div>
+				<div class="opis">Piękny las</div>
+			</div>
+		</td>
+		<td>
+			<div class="obrazek">
+				<img src="sad.jpg"/>
+				<div class="questionMark">?</div>
+				<div class="opis">Sad dzikich jabłoni</div>
+			</div>
+		</td>
+	</tr>
+	<tr><td>
+	<div class="obrazek">
+		<img src="pole.jpg"/>
+		<div class="questionMark">?</div>
+		<div class="opis">Zachód słońca nad polami pszenicy</div>
+	</div>
+	<td>
+	<div class="obrazek">
+		<img src="droga.jpg"/>
+		<div class="questionMark">?</div>
+		<div class="opis">Bieszczadzkie bezdroża</div>
+	</div>	
+	</center>
+</body>
+
+</html>

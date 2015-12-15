@@ -13,6 +13,18 @@ fclose($nowy);
 $nowy = fopen("pliki.txt", "a") or die("KONIEC");	
 fwrite($nowy, "\n".$nazwa);
 fclose($nowy);
-
-include("index.php");
 ?>
+
+<html>
+<head>
+<meta charset="utf8"/>
+<style>
+
+
+</style>
+</head>
+<body>
+<h1>Plik został dodany.</h1>
+<a href="index.php"><h2>Wróć</h2></a>
+</body>
+</html>
