@@ -1,0 +1,20 @@
+body {
+	background-color: lightblue;
+}
+
+
+#logowanie {
+	border: 1px darkblue solid;
+	width: 250px;
+	height: 50px;
+	background-color: white;
+	padding: 10px;
+	margin: 200px auto 0 auto;
+}
+
+
+#przyciskLogowania {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+

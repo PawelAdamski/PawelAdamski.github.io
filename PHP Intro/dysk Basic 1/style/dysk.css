@@ -1,0 +1,58 @@
+
+body {
+	margin: 0px;
+}
+
+#dodajPlik {
+	position: absolute;
+	width: 330px;
+	padding:10px;
+	background-color: darkblue;
+	height: 90%;
+	right: 0;
+	top:11%;
+}
+
+#naglowek {
+	background-color: blue;
+	height: 10%;
+	padding:5px;
+}
+
+.plik {
+	width: 105px;
+	padding: 2px;
+	margin:5px;
+	text-align: center;
+	border: 1px solid black;
+	background-color: white;
+
+
+}
+
+#pliki {
+	background-color: lightblue;
+	 margin-right: 330px; 
+	 height: 92%
+
+}
+
+
+#godzina {
+	display: inline-block;
+}
+
+#wyloguj {
+	border:darkblue 2px solid;
+	margin-top:5px;
+	width: 60px;
+	padding: 5px;
+display: inline-block;
+
+background-color: lightblue;	
+}
+
+#wyloguj a {
+	text-decoration: none;
+	color: white;
+}
