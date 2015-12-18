@@ -16,3 +16,4 @@ nowyPlik.fff
 asdf
 asdf
 asd
+PanTomek.txt

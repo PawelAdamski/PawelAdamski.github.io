@@ -1,3 +1,4 @@
 
 oceny2f.txt
 asdfas.jpb
+plik.aaa
