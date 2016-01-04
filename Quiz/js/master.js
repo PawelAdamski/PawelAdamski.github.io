@@ -12,9 +12,11 @@ $(function () {
     $('#slickQuiz').slickQuiz(
 	{events:{onAnswerCheck:foo},
 	 disableRanking:true,
+	 preventUnanswered:true,
 	 checkAnswerText:"Sprawdz",
 	 nextQuestionText: 'Dalej &raquo;',
 	 questionCountText: 'Pytanie %current/%total',
+	 preventUnansweredText: "Wybierz jedną odpowiedź"
 	 }
 );
 });
