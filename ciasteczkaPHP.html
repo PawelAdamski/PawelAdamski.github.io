@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Paweł Adamski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name"><Paweł Adamski</h1>
+    </section>
+
+    <section class="main-content">
+
+
+	<h2>Tworzenie/zmiana</h2>
+		<pre>
+&ltphp
+$cookie_name = "nazwisko";
+$cookie_value = "Adamski";
+setcookie($cookie_name, $cookie_value, time() + (60*60*24)*30); // (60*60*24) = 1 dzień
+?></pre>
+      Kolejne parametry funkcji <strong>setcookie</strong> to:
+      <ol>
+        <li>nazwa ciasteczka</li>
+        <li>wartość ciasteczka</li>
+        <li>czas życia - podajemy go w formie time()+&ltczas życia w sekundach&gt. Jeśli nie podamy tego parametru to ciasteczko zostanie usunięte po wyłączeniu przeglądarki. </li>
+      </ol>
+		<h2>Odczytywanie</h2>
+		<pre>
+&ltphp
+echo "Value is: " . $_COOKIE[$cookie_name];
+?>
+		</pre>
+		<h2>Sprawdzenie czy ciastko istnieje</h2>
+		<pre>
+&ltphp
+if(isset($_COOKIE[$cookie_name])) {
+    echo "Ciastko istnieje.";
+}
+?>
+		</pre>
+
+      <h2>Zadanie 1</h2>
+      Przygotuj stronę noweCiastka.php, która wyświetli komunikat "Uwaga ciasteczka" i stworzy ciasteczka:
+      <ul>
+        <li>o nazwie "imie" z wartością taką jak twoje imie oraz czasem wygaśnięcia za 1 dzień</li>
+        <li>o nazwie "lewa" z wartością taką jak imie osoby po lewej oraz czasem wygaśnięcia za 7 dzień</li>
+        <li>o nazwie "prawa" z wartością taką jak imie osoby po prawej, usuwane wraz z zamknięciem przeglądarki</li>
+      </ul>
+      Korzystając z narzędzi programistycznycih przeglądarki (F12) sprawdz, czy ciasteczka są utworzone poprawnie.
+
+      <h2>Zadanie 2</h2>
+      Przygotuj strony lewa.php oraz prawa.php, które wyświetlą odpowiednio wartość ciasteczek "lewa" oraz "prawa".
+      Na stronie noweCiastka.php dodaj do nich linki. Na stronach "lewa.php" oraz "prawa.php" dodaj link do strony "noweCiastka.php".
+   </section>
+
+  </body>
+</html>
