@@ -1,0 +1,50 @@
+DROP DATABASE IF EXISTS dbhotele;
+CREATE DATABASE dbhotele;
+USE dbhotele;
+
+# Baza danych : `dbhotele`
+#
+
+# --------------------------------------------------------
+
+#
+# Struktura tabeli dla  `thotele`
+#
+
+CREATE TABLE `thotele` (
+  `nazwa` varchar(150) NOT NULL default '',
+  `kod` varchar(15) NOT NULL default '',
+  `miejscowosc` varchar(50) NOT NULL default '',
+  `ulica` varchar(150) NOT NULL default '',
+  `numerdomu` varchar(15) NOT NULL default '',
+  `telefon` varchar(15) NOT NULL default '',
+  `www` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`nazwa`,`miejscowosc`,`telefon`),
+  KEY `nazwa` (`nazwa`,`miejscowosc`,`telefon`)
+) TYPE=MyISAM;
+
+#
+# Zrzut danych tabeli `thotele`
+#
+
+INSERT INTO `thotele` VALUES ('WILLA EWA', '57-540', 'Lądek Zdrój', 'Spacerowa', '5', '(74) 81 46 691', 'http://www.willaewa.pl');
+INSERT INTO `thotele` VALUES ('WATRA', '57-540', 'Lądek Zdrój', 'Brzozowa', '14', '(74) 81 46 609', '');
+INSERT INTO `thotele` VALUES ('SZAROTKA', '57-540', 'Lądek Zdrój', 'Górzysta', '6', '(74) 81 46 419', '');
+INSERT INTO `thotele` VALUES ('POD WYCI±GIEM', '57-540', 'Lądek Zdrój', 'Kopernika', '16', '(74) 81 46 716', '');
+INSERT INTO `thotele` VALUES ('JODŁA', '57-540', 'Lądek Zdrój', 'Kopernika', '4', '(74) 81 7 777', '');
+INSERT INTO `thotele` VALUES ('', '57-540', 'Lądek Zdrój', 'Kopernika', '1', '(74) 81 46 748', '');
+INSERT INTO `thotele` VALUES ('', '57-540', 'Lądek Zdrój', 'Kościuszki', '54', '(74) 81 47 069', '');
+INSERT INTO `thotele` VALUES ('SKALNIAK', '57-540', 'Lądek Zdrój', 'Stójków', '36', '(74) 81 46 645', '');
+INSERT INTO `thotele` VALUES ('MINI-HOTEL', '57-540', 'Lądek Zdrój', 'Miła', '6', '(74) 81 46 530', '');
+INSERT INTO `thotele` VALUES ('JANINA', '57-540', 'Lądek Zdrój', 'Paderewskiego', '3', '(74) 81 47 198', '');
+INSERT INTO `thotele` VALUES ('HELIOS', '34-500', 'Zakopane', 'Słoneczna', '2a', '(0-1820) 138 08', 'http://www.regle.zakopane.pl/helios/');
+INSERT INTO `thotele` VALUES ('DOM MYSLIWSKI', '11-612', 'Kruklanki', 'Borki', '', '87-4217422', '');
+INSERT INTO `thotele` VALUES ('GRAŻYNA', '', 'Ełk', 'Nadjeziorna', '11', '(087) 621 17 00', 'http://www.grazyna.elk.com.pl/');
+INSERT INTO `thotele` VALUES ('RELAX', '11-500', 'Giżycko', 'Białostocka', '5', '87-4283070', '');
+INSERT INTO `thotele` VALUES ('GALINDIA', '12-210', 'Ukta', 'Iznota', '', '090508235', '');
+INSERT INTO `thotele` VALUES ('FERIENHAUS', '11-732', 'Kosewo', 'Jakubowo', '10', '89-7424345', 'http://ferienhaus.mazury.info.pl');
+INSERT INTO `thotele` VALUES ('ZURB ZAMBRÓW', '11-612', 'Kruklanki', 'Jeziorowskie', '31', '87-4217303', '');
+INSERT INTO `thotele` VALUES ('JORA', '11-730', 'Mikołajki', 'Jora Wielka', '49', '87-4213047', 'http://jora.mazury.info.pl');
+
+
+GRANT SELECT ON *.* TO reader@localhost IDENTIFIED BY '';

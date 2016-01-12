@@ -1,0 +1,2 @@
+kowalski: 5
+michalski: 4
