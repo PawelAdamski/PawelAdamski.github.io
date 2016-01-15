@@ -9,9 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5690a0a8-d6dc-453a-ab87-274fa03d5273" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP Intro/SQL/connect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klasa2f.html" afterPath="$PROJECT_DIR$/klasa2f.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PawelAdamski.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +34,8 @@
       <file leaf-file-name="klasa2f.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/klasa2f.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.510101">
-              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.3030303">
+              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -848,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/klasa2f.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.510101">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.3030303">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
           <folding />
         </state>
       </provider>
