@@ -6,7 +6,7 @@ $literka = $_POST["literka"];
 if ($literka=="n") {
   setcookie("n", true);
 }else if ($literka=="a") {
-  setcookie("a", true);
+  setcookie("a", true);x
 } else if ($literka=="u") {
   setcookie("u", true);
 } else if ($literka=="c") {
