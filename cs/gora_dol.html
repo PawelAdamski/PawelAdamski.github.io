@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        div {
+         margin:5px;
+        display:block;
+        width:100px;
+        height:100px;
+        border:solid 1px black;
+        font-size:90px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div onmousemove="zwieksz()">+</div>
+    <div onmousemove="zmniejsz()">-</div>
+    
+    
+
+<script>
+
+    var l=0;
+
+    function zwieksz(){
+        l=l+1;
+        console.log(l);
+    }
+
+    function zmniejsz(){
+        l=l-1;
+        console.log(l);
+    }
+
+</script>
+</body>
+</html>
