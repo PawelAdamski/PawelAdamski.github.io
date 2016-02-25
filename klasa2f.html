@@ -17,12 +17,21 @@
 
     <section class="main-content">
 
-      <h2>29.01.2016</h2>
-      <h3>Zdarzenia</h3>
+      <h2>25.02.2016</h2>
+        <h3>Potrzebne funkcje</h3>
+        <ul>
+            <li>alert - wyświetla komunikat dla użytkownika</li>
+            <li>prompt - wyświetla komunikat dla użytkownika, z możliwością podania tekstu</li>
+            <li>parseInt - zamienia tekst na liczbę</li>
+            <li>document.getElementById - znajduje na stronie wskazany element</li>
+
+        </ul>
+
+        <h3>Zdarzenia</h3>
       <pre>
-         &ltinput id="liczba" onclick="dodaj()"/>
+         &ltinput id="liczba" onclick="<strong>dodaj()</strong>"/>
         &ltscript>
-          function dodaj() {
+          function <strong>dodaj()</strong> {
            // ...
           }
 
@@ -39,17 +48,18 @@
       </pre>
       <h3>Pobieranie wartości pola</h3>
       <pre>
-        &ltinput id="liczba"/>
+        &ltinput id="<strong>liczba</strong>"/>
         &ltscript>
-          var liczbaText = document.getElementById("liczba").value;
+          var liczbaText = document.getElementById("<strong>liczba</strong>").value;
           var liczba = parseInt(liczbaText);
 
         &lt/script>
       </pre>
       <h3>Wstawianie treści na strone</h3>
       <pre>
+        &ltinput id="<strong>pole</strong>"/>
         &ltscript>
-          document.getElementById("pole").innerHTML = "Moj kod";
+          document.getElementById("<strong>pole</strong>").innerHTML = "Moj kod";
         &lt/script>
       </pre>
 

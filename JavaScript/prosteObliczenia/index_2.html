@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+        a: <input id="a"/><br/>
+        b: <input id="b"/><br/>
+        h: <input id="h"/><br/>
+
+        <button onclick="obliczPole()">Oblicz pole trapezu</button>
+
+
+    <p  >Wynik: <span id="wynik"></span></p>
+
+
+<script>
+function obliczPole(){
+    var a_text = document.getElementById("a").value;
+    var b_text = document.getElementById("b").value;
+    var h_text = document.getElementById("h").value;
+
+    a = parseInt(a_text);
+    b = parseInt(b_text);
+    h = parseInt(h_text);
+
+    document.getElementById("wynik").innerHTML = (a+b)*h/2;
+}
+</script>
+</body>
+</html>

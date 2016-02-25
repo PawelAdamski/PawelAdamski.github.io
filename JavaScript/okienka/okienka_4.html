@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+Imie:<input id="imie"/>
+
+<button onclick="powitanie()">Witaj</button>
+
+
+<p id="komunikat"></p>
+
+
+<script>
+    function powitanie(){
+        imie = document.getElementById("imie").value;
+        document.getElementById("komunikat").innerHTML = "Witaj "+imie;
+    }
+</script>
+</body>
+</html>

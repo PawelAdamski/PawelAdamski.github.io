@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+Imie:<input id="imie"/>
+Wiek:<input id="wiek"/>
+
+<button onclick="powitanie()">Witaj</button>
+
+
+<p id="komunikat"></p>
+
+
+<script>
+    function powitanie(){
+        var imie = document.getElementById("imie").value;
+        var wiekTekst = document.getElementById("wiek").value;
+        document.getElementById("komunikat").innerHTML = "Witaj "+imie+". Masz "+wiekTekst+" lat";
+    }
+</script>
+</body>
+</html>
