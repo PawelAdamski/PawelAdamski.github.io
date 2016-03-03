@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+        }
+
+        #hero {
+            position:absolute;
+            background-image: url("hero.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+
+            left:100px;
+            top:200px;
+        }
+
+        #monster {
+            position:absolute;
+            background-image: url("monster.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+            left:100px;
+            top:50px;
+        }
+
+
+        #sterowanie {
+            position:absolute;
+            top:500px;
+            left: 170px;
+        }
+
+        #sterowanie button {
+            width:32px;
+            height:32px;
+            margin:0px;
+        }
+
+        #sterowanie p {
+            margin:0px;
+
+        }
+
+        #menu {
+            position:absolute;
+            top:600px;
+            left: 170px;
+        }
+
+
+        #bullet {
+            position:absolute;
+            background-image: url("bullet.gif");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+            display:none;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="hero"></div>
+    <div id="monster"></div>
+    <div id="bullet"></div>
+
+<div id = "sterowanie">
+    <p>
+        <button style="position:relative;left:32px;" onclick="doGory()")>&uarr;</button>
+    </p>
+    <p>
+        <button onclick="wLewo()">&larr;</button><button onclick="wDol()")>&darr;</button><button onclick="wPrawo()">&rarr;</button>
+    </p>
+    <p><button onclick="strzelaj()"  >fire</button></p>
+</div>
+<div id="menu">
+    <button onclick="zapisz()">Zapisz</button>
+    <button onclick="wczytaj()">Wczytaj</button>
+
+</div>
+
+
+<script>
+
+var heroLeft = 100;
+var heroTop = 200;
+var monsterLeft = 100;
+var monsterTop = 50;
+
+var bulletLeft;
+var bulletTop;
+var bulletTopDirection;
+var bulletLeftDirection;
+
+function strzelaj() {
+     bulletLeft = heroLeft;
+     bulletTop = heroTop;
+
+     document.getElementById("bullet").style.display = "block";
+     document.getElementById("bullet").style.left = bulletLeft+"px";
+     document.getElementById("bullet").style.top = bulletTop+"px";
+
+      setInterval(rysujPocisk,100);
+
+}
+
+function rysujPocisk(){
+    bulletLeft = bulletLeft+20;
+
+     document.getElementById("bullet").style.left = bulletLeft+"px";
+     document.getElementById("bullet").style.top = bulletTop+"px";
+}
+
+
+
+function zapisz(){
+    localStorage.setItem("heroLeft",heroLeft);
+    localStorage.setItem("heroTop",heroTop);
+    localStorage.setItem("monsterLeft",monsterLeft);
+    localStorage.setItem("monsterTop",monsterTop);
+}
+
+function wczytaj(){
+    heroLeft = parseInt(localStorage.getItem("heroLeft"));
+    heroTop  = parseInt(localStorage.getItem("heroTop"));
+    monsterLeft = parseInt(localStorage.getItem("monsterLeft"));
+    monsterTop  = parseInt(localStorage.getItem("monsterTop"));
+
+    document.getElementById("monster").style.left = monsterLeft+"px";
+    document.getElementById("monster").style.top = monsterTop+"px";
+    document.getElementById("hero").style.left = heroLeft+"px";
+    document.getElementById("hero").style.top = heroTop+"px";
+}
+
+function doGory(){
+    heroTop = heroTop-10;
+    document.getElementById("hero").style.top = heroTop+"px";
+}
+
+function wDol(){
+    heroTop = heroTop+10;
+    document.getElementById("hero").style.top = heroTop+"px";
+}
+
+function wLewo(){
+    heroLeft = heroLeft-10;
+    document.getElementById("hero").style.left = heroLeft+"px";
+}
+
+function wPrawo(){
+    heroLeft = heroLeft+10;
+    document.getElementById("hero").style.left = heroLeft+"px";
+}
+
+
+function uciekaj(){
+    monsterLeft = Math.floor((Math.random() * 350) + 1);
+    monsterTop  = Math.floor((Math.random() * 350) + 1);
+
+    document.getElementById("monster").style.left = monsterLeft+"px";
+    document.getElementById("monster").style.top = monsterTop+"px";
+}
+
+
+setInterval(uciekaj,5000);
+
+
+</script>
+
+
+</body>
+</html>

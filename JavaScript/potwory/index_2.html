@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+        }
+
+        #hero {
+            position:absolute;
+            background-image: url("hero.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+
+            left:100px;
+            top:200px;
+        }
+
+        #monster {
+            position:absolute;
+            background-image: url("monster.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+            left:100px;
+            top:50px;
+        }
+
+
+        #sterowanie {
+            position:absolute;
+            top:500px;
+            left: 170px;
+        }
+
+        #sterowanie button {
+            width:32px;
+            height:32px;
+            margin:0px;
+        }
+
+        #sterowanie p {
+            margin:0px;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="hero"></div>
+    <div id="monster"></div>
+
+<div id = "sterowanie">
+    <p>
+        <button style="position:relative;left:32px;" onclick="doGory()")>&uarr;</button>
+    </p>
+    <p>
+        <button onclick="wLewo()">&larr;</button><button onclick="wDol()")>&darr;</button><button onclick="wPrawo()">&rarr;</button>
+    </p>
+</div>
+
+
+<script>
+
+var heroLeft = 100;
+var heroTop = 200;
+
+function doGory(){
+    heroTop = heroTop-10;
+    document.getElementById("hero").style.top = heroTop+"px";
+}
+
+function wDol(){
+    heroTop = heroTop+10;
+    document.getElementById("hero").style.top = heroTop+"px";
+}
+
+function wLewo(){
+    heroLeft = heroLeft-10;
+    document.getElementById("hero").style.left = heroLeft+"px";
+}
+
+function wPrawo(){
+    heroLeft = heroLeft+10;
+    document.getElementById("hero").style.left = heroLeft+"px";
+}
+
+</script>
+
+
+</body>
+</html>

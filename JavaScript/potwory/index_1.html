@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+        }
+
+        .hero {
+            position:absolute;
+            background-image: url("hero.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+
+            left:100px;
+            top:200px;
+        }
+
+        .monster {
+            position:absolute;
+            background-image: url("monster.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+            left:100px;
+            top:50px;
+        }
+
+
+        #sterowanie {
+            position:absolute;
+            top:500px;
+            left: 170px;
+        }
+
+        #sterowanie button {
+            width:32px;
+            height:32px;
+            margin:0px;
+        }
+
+        #sterowanie p {
+            margin:0px;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="hero"></div>
+    <div class="monster"></div>
+
+<div id = "sterowanie">
+    <p>
+        <button style="position:relative;left:32px;">&uarr;</button>
+    </p>
+    <p>
+        <button>&larr;</button><button>&darr;</button><button>&rarr;</button>
+    </p>
+</div>
+
+
+</body>
+</html>
