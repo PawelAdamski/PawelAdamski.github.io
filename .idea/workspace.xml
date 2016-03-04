@@ -9,12 +9,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5690a0a8-d6dc-453a-ab87-274fa03d5273" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory/index_0.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory/index_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory/index_2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory/index_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/okienka/okienka_3.html" afterPath="$PROJECT_DIR$/JavaScript/okienka/okienka_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/bullet.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/hero.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/monster.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/rip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory/gra.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/gra.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/potwory2/keypress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/potwory/index_3.html" afterPath="$PROJECT_DIR$/JavaScript/potwory/index_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klasa2f.html" afterPath="$PROJECT_DIR$/klasa2f.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript/else-if/zadanie2.html" afterPath="$PROJECT_DIR$/JavaScript/else-if/zadanie2.html" />
     </list>
     <ignored path="PawelAdamski.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,43 +45,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index_0.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_0.html">
+      <file leaf-file-name="klasa2f.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/klasa2f.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.76855123">
+              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_1.html">
+      <file leaf-file-name="zadanie1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/else-if/zadanie1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#p#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_3.html">
+      <file leaf-file-name="zadanie2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/else-if/zadanie2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="66" selection-start-line="111" selection-start-column="66" selection-end-line="111" selection-end-column="66" />
+            <state vertical-scroll-proportion="-9.375">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zadanie1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zadanie2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zadanie3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PHP Intro/kolorowe_ciastka/index.php" />
-        <option value="$PROJECT_DIR$/PHP Intro/kolorowe_ciastka/rozumiem.php" />
         <option value="$PROJECT_DIR$/ciasteczkaPHP.html" />
         <option value="$PROJECT_DIR$/klasa4e.html" />
         <option value="$PROJECT_DIR$/Countdown/index.html" />
@@ -143,12 +168,14 @@
         <option value="$PROJECT_DIR$/JavaScript/okienka/okienka_5.html" />
         <option value="$PROJECT_DIR$/JavaScript/okienka/okienka_6.html" />
         <option value="$PROJECT_DIR$/JavaScript/wstep/wstep_4.html" />
-        <option value="$PROJECT_DIR$/klasa2f.html" />
         <option value="$PROJECT_DIR$/JavaScript/okienka/okienka_3.html" />
         <option value="$PROJECT_DIR$/JavaScript/potwory/index.html" />
         <option value="$PROJECT_DIR$/JavaScript/potwory/index_1.html" />
         <option value="$PROJECT_DIR$/JavaScript/potwory/index_2.html" />
+        <option value="$PROJECT_DIR$/JavaScript/else-if/zadanie2.html" />
+        <option value="$PROJECT_DIR$/JavaScript/potwory/gra.html" />
         <option value="$PROJECT_DIR$/JavaScript/potwory/index_3.html" />
+        <option value="$PROJECT_DIR$/klasa2f.html" />
       </list>
     </option>
   </component>
@@ -166,9 +193,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="715" />
     <option name="y" value="24" />
-    <option name="width" value="1301" />
+    <option name="width" value="650" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -210,9 +237,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -259,29 +283,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="potwory" />
+              <option name="myItemId" value="zadaniaIF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PawelAdamski.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PawelAdamski.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="else-if" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="kla&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/klasa2f.html&#10;klasa&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/klasa2f.html&#10;inde&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/PHP Intro/wisielec/index.php&#10;sza&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/PHP Intro/szachownica.php&#10;index.html&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/index.html" />
+    <property name="SearchEverywhereHistoryKey" value="klasa&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/klasa2f.html&#10;kla&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/klasa2f.html&#10;inde&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/PHP Intro/wisielec/index.php&#10;sza&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/PHP Intro/szachownica.php&#10;index.html&#9;FILE&#9;file:///home/pawel/Repository/github/PawelAdamski.github.io/index.html" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
     <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JavaScript/zadaniaIF" />
+      <recent name="$PROJECT_DIR$/JavaScript/if-else" />
+      <recent name="$PROJECT_DIR$/JavaScript" />
       <recent name="$PROJECT_DIR$/JavaScript/potwory" />
       <recent name="$PROJECT_DIR$/JavaScript/okienka" />
-      <recent name="$PROJECT_DIR$/JavaScript/wstep" />
-      <recent name="$PROJECT_DIR$/JavaScript/prosteObliczenia" />
-      <recent name="$PROJECT_DIR$/cs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JavaScript/zadaniaIF" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cs" />
       <recent name="$PROJECT_DIR$/PHP Intro" />
@@ -486,8 +532,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="715" y="24" width="650" height="744" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -498,7 +544,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.119205296" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -541,55 +587,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PHP Intro/kolorowe_ciastka/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32038835">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP Intro/kolorowe_ciastka/rozumiem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41747573">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Countdown/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025252525">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Quiz/podstawyPHP.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Quiz/CSS_position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Quiz/CSS_position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29126215">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP Intro/Sklep/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39320388">
-          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP Intro/Sklep/koszyk.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -830,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/klasa2f.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/okienka/okienka_6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12626262">
@@ -890,18 +880,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_2.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript/if-else/zadanie1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/potwory/index_3.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2929293">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/if-else/zadanie3.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="66" selection-start-line="111" selection-start-column="66" selection-end-line="111" selection-end-column="66" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/else-if/zadanie1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/else-if/zadanie2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/zadaniaIF/zadanie2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/klasa2f.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76855123">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
           <folding />
         </state>
       </provider>

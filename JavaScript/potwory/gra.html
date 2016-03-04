@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body {
+            background-image: url("background.png");
+            background-repeat: no-repeat;
+        }
+
+        #hero {
+            position:absolute;
+            background-image: url("hero.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+
+            left:100px;
+            top:200px;
+        }
+
+        #monster {
+            position:absolute;
+            background-image: url("monster.png");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+            left:100px;
+            top:50px;
+        }
+
+
+        #sterowanie {
+            position:absolute;
+            top:500px;
+            left: 170px;
+        }
+
+        #sterowanie button {
+            width:32px;
+            height:32px;
+            margin:0px;
+        }
+
+        #sterowanie p {
+            margin:0px;
+
+        }
+
+        #menu {
+            position:absolute;
+            top:600px;
+            left: 170px;
+        }
+
+
+        #bullet {
+            position:absolute;
+            background-image: url("bullet.gif");
+            background-repeat: no-repeat;
+            width:32px;
+            height:32px;
+            display:none;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="hero"></div>
+    <div id="monster"></div>
+    <div id="bullet"></div>
+
+<div id = "sterowanie">
+    <p>
+        <button style="position:relative;left:32px;" onclick="doGory()")>&uarr;</button>
+    </p>
+    <p>
+        <button onclick="wLewo()">&larr;</button><button onclick="wDol()")>&darr;</button><button onclick="wPrawo()">&rarr;</button>
+    </p>
+    <p><button onclick="strzelaj()"  >fire</button></p>
+</div>
+<div id="menu">
+    <button onclick="zapisz()">Zapisz</button>
+    <button onclick="wczytaj()">Wczytaj</button>
+
+</div>
+
+
+
+
+
+<script>
+
+var heroLeft = 100;
+var heroTop = 200;
+var monsterLeft = Math.floor((Math.random() * 400) + 1);
+var monsterTop  = Math.floor((Math.random() * 400) + 1);
+document.getElementById("monster").style.left = monsterLeft+"px";
+document.getElementById("monster").style.top = monsterTop+"px";
+
+
+var bulletLeft;
+var bulletTop;
+var bulletTopDirection=0;
+var bulletLeftDirection=10;
+var bulletOut;
+var bulletHandler;
+var bulletCounter;
+
+var uciekajHandler
+
+function strzelaj() {
+
+
+     if (!bulletOut) {
+
+         bulletLeft = heroLeft;
+         bulletTop = heroTop;
+
+         document.getElementById("bullet").style.display = "block";
+         document.getElementById("bullet").style.left = bulletLeft+"px";
+         document.getElementById("bullet").style.top = bulletTop+"px";
+
+          bulletOut = true;
+          bulletCounter  = 25;
+          bulletHandler = setInterval(rysujPocisk,70);
+      }
+
+}
+
+function rysujPocisk(){
+console.log(bulletTop);
+    bulletLeft = bulletLeft+bulletLeftDirection;
+    bulletTop = bulletTop+bulletTopDirection;
+
+     document.getElementById("bullet").style.left = bulletLeft+"px";
+     document.getElementById("bullet").style.top = bulletTop+"px";
+
+
+    if (bulletTop<32 || bulletLeft<32 || bulletTop>416 || bulletLeft>448) {
+        bulletOut = false;
+        document.getElementById("bullet").style.display = "none";
+        clearInterval(bulletHandler);
+    }
+
+
+    if (bulletTop>monsterTop && bulletTop<monsterTop+32 && bulletLeft>monsterLeft && bulletLeft<monsterLeft+32 ) {
+        document.getElementById("monster").style.backgroundImage = "url('rip.png')";
+        clearInterval(uciekajHandler);
+    }
+
+
+    if (bulletTop+10>monsterTop && bulletTop+10<monsterTop+32 && bulletLeft+10>monsterLeft && bulletLeft+10<monsterLeft+32 ) {
+        document.getElementById("monster").style.backgroundImage = "url('rip.png')";
+        clearInterval(uciekajHandler);
+    }
+
+    bulletCounter =bulletCounter-1;
+    if (bulletCounter<=0 ) {
+      bulletOut = false;
+        document.getElementById("bullet").style.display = "none";
+        clearInterval(bulletHandler);
+    }
+
+
+}
+
+
+
+function zapisz(){
+    localStorage.setItem("heroLeft",heroLeft);
+    localStorage.setItem("heroTop",heroTop);
+    localStorage.setItem("monsterLeft",monsterLeft);
+    localStorage.setItem("monsterTop",monsterTop);
+}
+
+function wczytaj(){
+    heroLeft = parseInt(localStorage.getItem("heroLeft"));
+    heroTop  = parseInt(localStorage.getItem("heroTop"));
+    monsterLeft = parseInt(localStorage.getItem("monsterLeft"));
+    monsterTop  = parseInt(localStorage.getItem("monsterTop"));
+
+    document.getElementById("monster").style.left = monsterLeft+"px";
+    document.getElementById("monster").style.top = monsterTop+"px";
+    document.getElementById("hero").style.left = heroLeft+"px";
+    document.getElementById("hero").style.top = heroTop+"px";
+}
+
+function doGory(){
+    heroTop = heroTop-10;
+    if (heroTop<32) {
+        heroTop = 32;
+    }
+    document.getElementById("hero").style.top = heroTop+"px";
+
+    bulletLeftDirection = 0;
+    bulletTopDirection = -10;
+}
+
+function wDol(){
+    heroTop = heroTop+10;
+    if (heroTop>416) {
+        heroTop = 416   ;
+    }
+    document.getElementById("hero").style.top = heroTop+"px";
+
+    bulletLeftDirection = 0;
+    bulletTopDirection = 10;
+}
+
+function wLewo(){
+    heroLeft = heroLeft-10;
+    if (heroLeft<32) {
+        heroLeft = 32;
+    }
+    document.getElementById("hero").style.left = heroLeft+"px";
+
+    bulletLeftDirection = -10;
+    bulletTopDirection = 0;
+}
+
+function wPrawo(){
+    heroLeft = heroLeft+10;
+    if (heroLeft>448){
+        heroLeft = 448;
+    }
+    document.getElementById("hero").style.left = heroLeft+"px";
+
+    bulletLeftDirection = 10;
+    bulletTopDirection = 0;
+}
+
+
+function uciekaj(){
+    monsterLeft = Math.floor((Math.random() * 420) + 1);
+    monsterTop  = Math.floor((Math.random() * 420) + 1);
+
+    document.getElementById("monster").style.left = monsterLeft+"px";
+    document.getElementById("monster").style.top = monsterTop+"px";
+}
+
+
+uciekajHandler = setInterval(uciekaj,4000);
+
+
+</script>
+
+
+    <script src="keypress.js"></script>
+    <script>
+    var listener = new window.keypress.Listener();
+    listener.simple_combo("up", doGory);
+    listener.simple_combo("down", wDol);
+    listener.simple_combo("left", wLewo);
+    listener.simple_combo("right", wPrawo);
+    listener.simple_combo("space", strzelaj);
+</script>
+
+</body>
+</html>
