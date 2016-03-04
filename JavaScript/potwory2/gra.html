@@ -49,6 +49,13 @@
 
         }
 
+        #bullet {
+            display:none;
+            background-image: url("bullet.gif");
+            height: 10px;
+            width: 10px;
+            position: absolute;
+        }
 
     </style>
 
@@ -58,6 +65,7 @@
 
     <div id="hero"></div>
     <div id="monster"></div>
+    <div id="bullet"></div>
     
 <div id = "sterowanie">
     <p>
@@ -76,10 +84,21 @@ var heroTop = 200;
 var monsterLeft = 100;
 var monsterTop = 50;
 
+var bulletLeft;
+var bulletTop;
+var bulletLeftDirection = 10;
+var bulletTopDirection = 0;
+var bulletOut = false;
 
 function doGory(){
     heroTop = heroTop-10;
     document.getElementById("hero").style.top = heroTop+"px";
+
+
+    if (heroTop<32) {
+        heroTop = 32;
+    }
+
 }
 
 function wDol(){
@@ -106,12 +125,59 @@ function uciekaj(){
     document.getElementById("monster").style.top = monsterTop+"px";
 }
 
+function rysujPocisk(){
+    bulletLeft=bulletLeft+bulletLeftDirection;
+    bulletTop=bulletTop+bulletTopDirection;
+ 
+    document.getElementById("bullet").style.left = bulletLeft+"px";
+    document.getElementById("bullet").style.top = bulletTop+"px";    
+
+
+    if (bulletLeft<32 || bulletLeft>448 || bulletTop<32 || bulletTop>416){
+        document.getElementById("bullet").style.display = "none";
+        bulletOut = false;
+    }
+
+
+}
+
+
+function strzelaj(){
+
+    if (bulletOut === false) {
+        bulletLeft = heroLeft;
+        bulletTop = bulletTop;
+
+        document.getElementById("bullet").style.display="block";
+        document.getElementById("bullet").style.left = bulletLeft+"px";
+        document.getElementById("bullet").style.top = bulletTop+"px";
+
+        bulletOut = true;
+
+        setInterval(rysujPocisk,100);
+    }
+}
+
+
+
 
 setInterval(uciekaj,5000);
 
-
 </script>
 
+<script src="keypress.js"></script>
+<script>
+    var listener = new window.keypress.Listener();
+    listener.simple_combo("up", doGory);
+    listener.simple_combo("down", wDol);
+    listener.simple_combo("left", wLewo);
+    listener.simple_combo("right", wPrawo);
+    listener.simple_combo("space", strzelaj);
+
+
+    listener.simple_combo("up right",prawyGorny);
+
+</script>
 
 </body>
 </html>
