@@ -1,0 +1,5 @@
+Które z poniższych wyrażeń jest x>0 && x<10
+
+1)  !(x<=0 || x>=10)
+2)  0<x<10
+3)  3x>=0 || x>=10

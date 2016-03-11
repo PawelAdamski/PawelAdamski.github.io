@@ -16,13 +16,46 @@
 
 
     <section class="main-content">
-	<h2>03.03.2016</h2>
+	
+	  <h2>11.03.2016</h2>
+	<a href="JavaScript/cwiczenia.zip">Ćwiczenia</a>
+	<a href="sticky.html">Sticky</a>
+  
 
-	<a href="JavaScript/operatoryPorownania/">Operatory porównania</a><br/>
-	<a href="JavaScript/operatory%20logiczne/">Operatory logiczne</a><br/>
-	<a href="JavaScript/if">If-y</a><br/>
-	<a href="JavaScript/if-else/">else</a><br/>
-	<a href="JavaScript/else-if/">else-if</a><br/>
+        <h2>04.03.2016</h2>
+
+	<img src="http://zs.ffshrine.org/album/legend-of-zelda/sprites/Fire2.gif"/>
+
+        <a href="JavaScript/potwory.zip">Potwory</a>
+
+        <h3>Pro</h3>
+        <ol>
+            <li>W podstawowej wersji naszej gry potwór ucieka wykonując co 5 sekund skok w losowe miejsce. Proszę zmienić
+            zachowanie potwora, tak aby zamiast skoków płynnie i losowo poruszał się po całej planszy. Postaraj się aby twój kod mógł zostać użyty przez innych kolegów.</li>
+            <li>Dodaj na planszy teleport, który będzie przenosił gracza w lose miejsce na planszy.</li>
+        </ol>
+
+
+        <h3>Normal</h3>
+        <a href="JavaScript/zadaniaIF.zip">Zadania</a>
+
+
+        <h2>03.03.2016</h2>
+
+<h3>Zadanie domowe</h3>
+<ol><li>Proszę o wykonanie strony z jednym polem tekstowym i jednym przyciskiem. Po naciśnięciu w guzik proszę wyświetlić komunikat "Witaj ...", gdzie w miejscu trzech kropek pojawi się napis wpisany w pole tekstowe.
+<li>Proszę o wykonanie strony z dwoma polami tekstowymi i jednym przyciskiem. Po naciśnięciu w guzik proszę wyświetlić komunikat "Suma wpisanych liczb to  ...", gdzie w miejscu trzech kropek pojawi się suma liczb wpisanych w pola tekstowe.
+ </ol>
+ Przykłady rozwiązań znajdziesz poniżej (lekcja z dnia 25.02.2016)
+
+ <h3>If-y</h3>
+	<a href="JavaScript/operatoryPorownania.zip">Operatory porównania</a><br/>
+	<a href="JavaScript/operatory%20logiczne.zip">Operatory logiczne</a><br/>
+	<a href="JavaScript/if.zip">If-y</a><br/>
+	<a href="JavaScript/if-else.zip">else</a><br/>
+	<a href="JavaScript/else-if.zip">else-if</a><br/>
+
+
 
 
       <h2>25.02.2016</h2>
@@ -37,7 +70,7 @@
 
         <h3>Zdarzenia</h3>
       <pre>
-         &ltinput id="liczba" onclick="<strong>dodaj()</strong>"/>
+         &ltbutton id="liczba" onclick="<strong>dodaj()</strong>"/>
         &ltscript>
           function <strong>dodaj()</strong> {
            // ...

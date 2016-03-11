@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    Imie: <input id="imie"/><br/>
+    Nazwisko: <input id="nazwisko"/><br/>
+    E-mail: <input id="email"/><br/>
+    Haslo: <input id="haslo" type="password"/><br/>
+    Powtórz hasło: <input id="haslo2" type="password"/><br/>
+    <button onclick="wyslij()">Wyślij</button>
+
+<script>
+
+function wyslij(){
+    var imie = document.getElementById('imie').value;
+    var nazwisko = document.getElementById('nazwisko').value;
+    var email = document.getElementById('email').value;
+    var haslo = document.getElementById('haslo').value;
+    var haslo2 = document.getElementById('haslo2').value;
+
+    if (imie.length<3){
+        alert("Imie jest za krótkie.");
+    }
+    if (imie.length>20){
+        alert("Imie jest za długie.");
+    }
+
+    if (nazwisko.length<3){
+        alert("Nazwisko jest za krótkie.");
+    }
+    if (nazwisko.length>20){
+        alert("Nazwisko jest za długie.");
+    }
+
+    if (email.length<3){
+        alert("Email jest za krótki.");
+    }
+    if (email.length>20){
+        alert("Email jest za długie.");
+    }
+
+    if (haslo.length<3){
+        alert("Hasło jest za krótkie.");
+    }
+    if (haslo.length>20){
+        alert("Hasło jest za długie.");
+    }
+
+    if (haslo!==haslo2){
+        alert("Hasła różnią się");
+    }
+
+}
+
+
+</script>
+     
+</body>
+</html>
