@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-
-</style>
-</head>
-<body>
-
-<canvas width="802" height="802" id = "canvas">
-</canvas> 
-
-<script>
 	function prostokat(x,y,width,height,color) {
 	var canvas = document.getElementById("canvas");
    	var ctx = canvas.getContext("2d");
@@ -31,9 +18,3 @@
 		prostokat(x*80+2,y*80+2,80-2,80-2,kolor);
 	}
 
-	koloruj(3,3,"yellow");
-koloruj(4,6,"yellow");
-</script>
-
-</body>
-</html>`
