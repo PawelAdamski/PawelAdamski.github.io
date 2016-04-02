@@ -16,8 +16,39 @@
 
 <script>
 
-	koloruj(3,3,"yellow");
-	koloruj(4,6,"green");
+var y=0;
+var kolorStartowy = "green";
+while (y<8){
+	var x = 0;
+	var kolor = kolorStartowy;
+	while (x<8){
+		koloruj(x,y,kolor);
+		x=x+1;
+		if (kolor === "green") {
+			kolor = "yellow";
+		} else {
+			kolor = "green";
+		}
+
+	}
+	if (kolorStartowy === "green") {
+		kolorStartowy = "yellow";
+	} else {
+		kolorStartowy = "green";
+	}
+	y=y+1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 
