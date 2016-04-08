@@ -1,0 +1,38 @@
+Zdefiniuj trzy obiekty:
+
+Gracz:
+właściwości:
+* pozycja x
+* pozycja y
+metody:
+* idz w lewo
+* idz w prawo
+* idz w góre
+* idz w dół
+* czyPrzegrales (sprawdza czy wpadłeś na potwora)
+* czyWygrales (sprawdza czy doszedł do nagrody)
+
+Potwór:
+właściwości:
+* pozycja x
+* pozycja y
+metody:
+* idz w góre
+* idz w dół
+
+
+Stan gry:
+właściwości
+* gracz
+* potwor (spróbuj dodać dwa lub trzy potwory)
+metody
+* rysuj
+
+
+
+Dodaj możliwość zapisywania i wczytywania stanu gry (użyj to tego LocalStorage). Dzięki użyciu obiektu do przechowywania stanu gry wystarczy zapisać/odczytać z LocalStorage obiekt ze stanem gry. http://www.w3schools.com/html/html5_webstorage.asp
+
+Użyj bilioteki https://dmauro.github.io/Keypress/ do obsługi klawiszy.
+
+Możliwość rozszerzenia:
+* przed grą gracz wybiera poziom trudności. Im trudniej tym więcej potworów, które poruszają się coraz szybiej. Różne poziomy trudności również moża zdefiniować jako obiekty:	
