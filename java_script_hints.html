@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Paweł Adamski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Java Script - ściągawka</h1>
+    </section>
+
+
+    <section class="main-content">
+
+
+ <h2>Jak dodać obsługę zdarzenia klinięcia myszki</h2>
+ Dodaj atrybut/zdarzenie <strong>onclick</strong> do elementu i przekarz sterowanie do funkcji.
+      <pre>
+         &ltbutton id="liczba" onclick="<strong>dodaj()</strong>"/>
+        &ltscript>
+          function <strong>dodaj()</strong> {
+           // ...
+          }
+
+        &lt/script>
+      </pre>
+<h2>Jak stworzyć funkcje</h2>
+      <pre>
+        &ltscript>
+          function dodaj() {
+           // ...
+          }
+
+        &lt/script>
+      </pre>
+<h2>Jak używać funkcji</h2>
+      <pre>
+        &ltscript>
+          function dodaj() {
+           // ...
+          }
+
+          <strong> dodaj()</strong>
+        &lt/script>
+      </pre>      
+      <h2>Pobieranie wartości pola tekstowego</h2>
+      <pre>
+        &ltinput id="<strong>liczba</strong>"/>
+        &ltscript>
+          var liczbaText = document.getElementById("<strong>liczba</strong>").value;
+          var liczba = parseInt(liczbaText);
+
+        &lt/script>
+      </pre>
+      <h2>Jak wstawić kod HTML na stronę</h2>
+      <pre>
+        &ltdiv id="<strong>pole</strong>"/>
+        &ltscript>
+          document.getElementById("<strong>pole</strong>").innerHTML = "Moj kod";
+        &lt/script>
+      </pre>
+
+      <h2>Jak zmienić klasę elementu</h2>
+      <pre>
+        &ltdiv id="<strong>pole</strong>"/>
+        &ltscript>
+          document.getElementById("<strong>pole</strong>").className = "pogrugiony";
+        &lt/script>
+      </pre>
+
+      <h2>Jak odczytać klasę elementu</h2>
+      <pre>
+        &ltdiv id="<strong>pole</strong>"/>
+        &ltscript>
+          var klasa = document.getElementById("<strong>pole</strong>").className
+          alert("Element pole ma klase: "+klasa);
+        &lt/script>
+      </pre>
+      <h2>Pętla while</h2>
+      Schemat:
+      <pre>
+        while (&ltwarunek>) {
+          &ltkod>
+        }
+      </pre>
+Przykład:
+<pre>
+  &ltscript>
+  var i = 0;
+  while (i&lt10) {
+    alert(i);
+    i++;
+  }
+  &lt/script>
+</pre>
+
+    <h2> Warunki (if-y)</h2>
+<pre>
+  &ltscript>
+  var wiek = parseInt(prompt("Podaj wiek"));
+  if (wiek>=18) {
+    alert("Możesz wejść.");
+  } else {
+    alert("Jesteś za młody.");
+  }
+  &lt/script>
+</pre>    
+
+    </section>
+
+  </body>
+</html>
+  

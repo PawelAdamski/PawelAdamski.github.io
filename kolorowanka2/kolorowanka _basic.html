@@ -1,0 +1,309 @@
+<html>
+<head>
+	<style>
+
+	#wybranyKolor {
+		margin-top:10px;
+		width:80px;
+		height:80px;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+	#menu img {
+		display:block;
+		width:60px;
+		background-color:grey;
+		margin-bottom:10px;
+	}
+
+	body {
+		background-color:grey;
+		margin:0px;
+	}
+
+	#menu img:hover {
+		outline:1px black solid;
+	}
+	#menu img{
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+
+	#menu {
+		background-color: lightgrey;
+		float:left;
+		padding:20px;
+		border-right: 2px solid black;
+		height:100%;
+	}
+
+	#paleta td {
+		width:40px;
+		height: 40px;
+		border-width: 0px;
+		margin: 0px;
+		padding:0px;
+
+	}
+
+	#plutno td {
+		border-width: 0px;
+		margin: 0px;
+		padding:0px;
+		
+
+	}
+
+	.rozmiar30 td{
+		width:30px;
+		height: 30px;
+	}
+
+	.rozmiar40  td{
+		width: 40px;
+		height: 40px;
+	}
+
+	.rozmiar50  td{
+		width: 50px;
+		height: 50px;
+	}
+
+	.rozmiar20  td{
+		width:20px;
+		height: 20px;
+	}
+	.rozmiar10  td{
+		width:10px;
+		height: 10px;
+	}
+
+
+	#plutno {
+		border-collapse:collapse;
+		background-color: white;
+	}
+
+	.czerwony {
+		background-color: red;
+	}
+
+	.zielony {
+		background-color: green;
+	}
+
+	.zolty {
+		background-color: yellow;
+	}
+
+	.czarny {
+		background-color: black;
+	}
+
+	.niebieski { 
+		background-color: blue;
+	}
+
+	.bialy {
+		background-color:white;
+	}
+	.rozowy{
+		background-color: pink;	
+	}
+
+	.zielony {
+		background-color:green;
+	}
+	.brazowy{
+		background-color: brown;	
+	}
+	</style>
+</head>
+<body>
+
+<script>
+var kolor="czerwony";
+var rozmiar=30
+function koloruj(id){
+	document.getElementById(id).className=kolor;
+}
+
+function zmienKolor(wybrany){
+	kolor=wybrany.className;
+	document.getElementById("wybranyKolor").className=kolor;
+}
+
+function mniejszy(){
+	if (rozmiar==10) {
+		return
+	}
+	rozmiar-=10;
+	document.getElementById("plutno").className = "rozmiar"+rozmiar;
+}
+
+function wiekszy(){
+	if (rozmiar==50){
+		return
+	}
+	rozmiar+=10;
+	document.getElementById("plutno").className = "rozmiar"+rozmiar;
+}
+
+function nowy() {
+	location.reload();
+}
+
+function drukuj(){
+	window.print();
+}
+
+</script>
+
+<div id="menu">
+
+<img src="nowy.jpg"  onClick="nowy()">
+<img src="drukuj.jpg"  onClick="drukuj()">
+<img src="mniejszy.jpg"  onClick="mniejszy()">
+<img src="wiekszy.jpg" onClick="wiekszy()">
+
+<hr>
+<table id="paleta">
+<tr><td class="niebieski" onclick="zmienKolor(this)"><td class="czarny"onclick="zmienKolor(this)"> 
+<tr><td class="czerwony" onclick="zmienKolor(this)"><td class="zolty" onclick="zmienKolor(this)">
+<tr><td class="bialy" onclick="zmienKolor(this)"><td class="rozowy" onclick="zmienKolor(this)">
+<tr><td class="zielony" onclick="zmienKolor(this)"><td class="brazowy" onclick="zmienKolor(this)">
+</table>
+
+<div id="wybranyKolor" class="czerwony">
+</div>
+
+</div>
+
+<table id="plutno" class="rozmiar30">
+<tr>
+	<td id="1,1" onClick="koloruj('1,1')">
+	<td id="1,2" onClick="koloruj('1,2')">
+	<td id="1,3" onClick="koloruj('1,3')">
+	<td id="1,4" onClick="koloruj('1,4')">
+	<td id="1,5" onClick="koloruj('1,5')">
+	<td id="1,6" onClick="koloruj('1,6')">
+	<td id="1,7" onClick="koloruj('1,7')">
+	<td id="1,8" onClick="koloruj('1,8')">		
+	<td id="1,9" onClick="koloruj('1,9')">
+	<td id="1,10" onClick="koloruj('1,10')">								
+</tr>
+<tr>
+	<td id="2,1" onClick="koloruj('2,1')">
+	<td id="2,2" onClick="koloruj('2,2')">
+	<td id="2,3" onClick="koloruj('2,3')">
+	<td id="2,4" onClick="koloruj('2,4')">
+	<td id="2,5" onClick="koloruj('2,5')">
+	<td id="2,6" onClick="koloruj('2,6')">
+	<td id="2,7" onClick="koloruj('2,7')">
+	<td id="2,8" onClick="koloruj('2,8')">		
+	<td id="2,9" onClick="koloruj('2,9')">
+	<td id="2,10" onClick="koloruj('2,10')">								
+</tr>
+<tr>
+	<td id="3,1" onClick="koloruj('3,1')">
+	<td id="3,2" onClick="koloruj('3,2')">
+	<td id="3,3" onClick="koloruj('3,3')">
+	<td id="3,4" onClick="koloruj('3,4')">
+	<td id="3,5" onClick="koloruj('3,5')">
+	<td id="3,6" onClick="koloruj('3,6')">
+	<td id="3,7" onClick="koloruj('3,7')">
+	<td id="3,8" onClick="koloruj('3,8')">		
+	<td id="3,9" onClick="koloruj('3,9')">
+	<td id="3,10" onClick="koloruj('3,10')">								
+</tr>
+<tr>
+	<td id="4,1" onClick="koloruj('4,1')">
+	<td id="4,2" onClick="koloruj('4,2')">
+	<td id="4,3" onClick="koloruj('4,3')">
+	<td id="4,4" onClick="koloruj('4,4')">
+	<td id="4,5" onClick="koloruj('4,5')">
+	<td id="4,6" onClick="koloruj('4,6')">
+	<td id="4,7" onClick="koloruj('4,7')">
+	<td id="4,8" onClick="koloruj('4,8')">		
+	<td id="4,9" onClick="koloruj('4,9')">
+	<td id="4,10" onClick="koloruj('4,10')">								
+</tr>
+<tr>
+	<td id="5,1" onClick="koloruj('5,1')">
+	<td id="5,2" onClick="koloruj('5,2')">
+	<td id="5,3" onClick="koloruj('5,3')">
+	<td id="5,4" onClick="koloruj('5,4')">
+	<td id="5,5" onClick="koloruj('5,5')">
+	<td id="5,6" onClick="koloruj('5,6')">
+	<td id="5,7" onClick="koloruj('5,7')">
+	<td id="5,8" onClick="koloruj('5,8')">		
+	<td id="5,9" onClick="koloruj('5,9')">
+	<td id="5,10" onClick="koloruj('5,10')">								
+</tr>
+<tr>
+	<td id="6,1" onClick="koloruj('6,1')">
+	<td id="6,2" onClick="koloruj('6,2')">
+	<td id="6,3" onClick="koloruj('6,3')">
+	<td id="6,4" onClick="koloruj('6,4')">
+	<td id="6,5" onClick="koloruj('6,5')">
+	<td id="6,6" onClick="koloruj('6,6')">
+	<td id="6,7" onClick="koloruj('6,7')">
+	<td id="6,8" onClick="koloruj('6,8')">		
+	<td id="6,9" onClick="koloruj('6,9')">
+	<td id="6,10" onClick="koloruj('6,10')">								
+</tr>
+<tr>
+	<td id="7,1" onClick="koloruj('7,1')">
+	<td id="7,2" onClick="koloruj('7,2')">
+	<td id="7,3" onClick="koloruj('7,3')">
+	<td id="7,4" onClick="koloruj('7,4')">
+	<td id="7,5" onClick="koloruj('7,5')">
+	<td id="7,6" onClick="koloruj('7,6')">
+	<td id="7,7" onClick="koloruj('7,7')">
+	<td id="7,8" onClick="koloruj('7,8')">		
+	<td id="7,9" onClick="koloruj('7,9')">
+	<td id="7,10" onClick="koloruj('7,10')">								
+</tr>
+<tr>
+	<td id="8,1" onClick="koloruj('8,1')">
+	<td id="8,2" onClick="koloruj('8,2')">
+	<td id="8,3" onClick="koloruj('8,3')">
+	<td id="8,4" onClick="koloruj('8,4')">
+	<td id="8,5" onClick="koloruj('8,5')">
+	<td id="8,6" onClick="koloruj('8,6')">
+	<td id="8,7" onClick="koloruj('8,7')">
+	<td id="8,8" onClick="koloruj('8,8')">		
+	<td id="8,9" onClick="koloruj('8,9')">
+	<td id="8,10" onClick="koloruj('8,10')">								
+</tr>
+<tr>
+	<td id="9,1" onClick="koloruj('9,1')">
+	<td id="9,2" onClick="koloruj('9,2')">
+	<td id="9,3" onClick="koloruj('9,3')">
+	<td id="9,4" onClick="koloruj('9,4')">
+	<td id="9,5" onClick="koloruj('9,5')">
+	<td id="9,6" onClick="koloruj('9,6')">
+	<td id="9,7" onClick="koloruj('9,7')">
+	<td id="9,8" onClick="koloruj('9,8')">		
+	<td id="9,9" onClick="koloruj('9,9')">
+	<td id="9,10" onClick="koloruj('9,10')">								
+</tr>
+<tr>
+	<td id="10,1" onClick="koloruj('10,1')">
+	<td id="10,2" onClick="koloruj('10,2')">
+	<td id="10,3" onClick="koloruj('10,3')">
+	<td id="10,4" onClick="koloruj('10,4')">
+	<td id="10,5" onClick="koloruj('10,5')">
+	<td id="10,6" onClick="koloruj('10,6')">
+	<td id="10,7" onClick="koloruj('10,7')">
+	<td id="10,8" onClick="koloruj('10,8')">		
+	<td id="10,9" onClick="koloruj('10,9')">
+	<td id="10,10" onClick="koloruj('10,10')">								
+</tr>
+</table> 
+
+</body>
+</html>
