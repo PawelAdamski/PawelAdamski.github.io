@@ -17,3 +17,8 @@ asdf
 asdf
 asd
 PanTomek.txt
+wycieczka.txt
+prezentecja
+dni otwarte
+EZN
+Zapraszamy do EZN

@@ -21,7 +21,7 @@
  <h2>Jak dodać obsługę zdarzenia klinięcia myszki</h2>
  Dodaj atrybut/zdarzenie <strong>onclick</strong> do elementu i przekarz sterowanie do funkcji.
       <pre>
-         &ltbutton id="liczba" onclick="<strong>dodaj()</strong>"/>
+        &ltbutton id="liczba" onclick="<strong>dodaj()</strong>"/>
         &ltscript>
           function <strong>dodaj()</strong> {
            // ...
@@ -47,7 +47,23 @@
 
           <strong> dodaj()</strong>
         &lt/script>
-      </pre>      
+      </pre>  
+
+<h2>Funkcja z parametrami</h2>
+      <pre>
+      &ltscript>
+        //Definicja
+        function poleProstokatu(a,b) {
+          return a*b;
+        }
+
+
+        // Użycie
+        poleProstokatu(5,8);
+     
+      &lt/script>
+      </pre>   
+
       <h2>Pobieranie wartości pola tekstowego</h2>
       <pre>
         &ltinput id="<strong>liczba</strong>"/>

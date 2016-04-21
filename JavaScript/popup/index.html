@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+
+    table {
+    	border:1px black solid;
+    	width: 550px;
+    	
+    	background-color: yellow;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-top: 100px;
+    }
+
+.ukryte {
+	display: none;
+}
+.widoczne {
+
+	display: block;
+}
+#obrazek {
+	width: 300px;
+	height:350px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    display: block;
+}
+a {
+	font-size: 1.5em;
+
+}
+
+#okienko {
+	width: 320px;
+	height:400px;
+	left:40%;
+    position: absolute;
+    top:200px;
+    background-color: grey;
+}
+
+button {
+	margin:5px;
+}
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <table>
+    <tr><th>Zawodnik<th>Klub<th>Reprezentacja
+    <tr>
+    <td><a onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/7/73/Robert_Lewandowski_FCB.jpg')">&#x263a;</a>Robert Lewandowski<td>Bayern Monachium<td>Polska
+    <tr><td><a onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/8/8d/2015_UEFA_Super_Cup_64_crop.jpg')">&#x263a;</a>Leo Messi<td>FC Barcelona<td>Argentyna
+    <tr><td><a onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/0/0f/Rus-Por2012_%2816%29.jpg')">&#x263a;</a>Cristiano Ronaldo<td>Real Madryt<td>Portugalia
+    <tr ><td><a onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/0/0c/Wayne-Rooney-2015-10-21.jpg')">&#x263a;</a>Wayne Roney<td>Manchester United<td>Anglia
+   
+    </table>
+
+    <div id ="okienko" class="ukryte">
+    	<img id="obrazek">
+    	<button onclick="document.getElementById('okienko').className = 'ukryte'">Ok</button>
+   </div>
+
+    <script>
+    function pokaz(url) {
+    	document.getElementById('okienko').className = 'widoczne'
+		document.getElementById("obrazek").src = url;
+    }
+
+    </script>
+</body>
+</html>

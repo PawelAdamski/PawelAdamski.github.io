@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<script>
+function sprawdzWiek(){
+	var t = parseInt(prompt("Podaj wiek"));
+	if (t>=18) {
+		alert("Zapraszam");
+	}
+else {
+		alert("Jesteś za młody");
+	}
+}
+
+
+function wczytajLiczbe(komunikat){
+	return parseInt(prompt(komunikat));
+}
+
+function nowyLicznik(n) {
+	return function() {
+		for (var i = n; i >=0 ; i--) {
+			alert(i);
+		}
+	}
+}
+
+</script>
+
+
+
+
+</body>
+</html>
