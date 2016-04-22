@@ -1,0 +1,33 @@
+<html>
+<body>
+
+	<script>
+
+
+	function poleProstokatu(a, b ) {
+		return a*b;
+	}
+
+
+	function oblicz(funkcja,a,b) {
+		alert(funkcja(a,b));
+	}
+
+
+	//oblicz(poleProstokatu,5,6);
+
+
+
+	function nowePowitanie(imie) {
+		return function () {
+			alert("Witaj "+imie);
+		}
+	}
+
+	var witajPawel = nowePowitanie("Pawel");
+	witajPawel();
+
+	</script>
+
+</body>
+</html>
