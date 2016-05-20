@@ -1,0 +1,129 @@
+<html>
+<head>
+<style type="text/css">
+	button {
+		width:30px;
+		height: 30px
+	}
+</style>
+</head>
+<body>
+
+<div id="main">
+	<div id="liczba1">
+		<input id="tekst" value="aa"/>
+		<div id="guziki">
+		<table>
+			<tr>
+				<td><button onclick="add(1)">1</button>
+				<td><button onclick="add(2)">2</button>
+				<td><button onclick="add(3)">3</button>
+			</tr>
+			<tr>
+				<td><button onclick="add(4)">4</button>
+				<td><button onclick="add(5)">5</button>
+				<td><button onclick="add(6)">6</button>
+			</tr>
+			<tr>
+				<td><button onclick="add(7)">7</button>
+				<td><button onclick="add(8)">8</button>
+				<td><button onclick="add(9)">9</button>
+			</tr>
+			<tr>
+				<td><button onclick="clear()">c</button>
+				<td><button onclick="add(0)">0</button>
+			</tr>
+		</table>
+		</div>
+	</div>
+	<hr/>
+	<div id="liczba2">
+		<input id="tekst2"/>
+		<div id="guziki">
+		<table>
+			<tr>
+				<td><button onclick="add2(1)">1</button>
+				<td><button onclick="add2(2)">2</button>
+				<td><button onclick="add2(3)">3</button>
+			</tr>
+			<tr>
+				<td><button onclick="add2(4)">4</button>
+				<td><button onclick="add2(5)">5</button>
+				<td><button onclick="add2(6)">6</button>
+			</tr>
+			<tr>
+				<td><button onclick="add2(7)">7</button>
+				<td><button onclick="add2(8)">8</button>
+				<td><button onclick="add2(9)">9</button>
+			</tr>
+			<tr>
+				<td><button onclick="clear()">c</button>
+				<td><button onclick="add2(0)">0</button>
+			</tr>
+		</table>
+		</div>
+	</div>
+	<hr/>
+	<button onClick="op('+')">+</button>
+	<button onClick="op('-')">-</button>
+	<button onClick="op('*')">*</button>
+	<button onClick="op('/')">/</button>h
+	<hr/>
+	<span id="wynik"></span>
+</div>
+
+<script>
+	var liczba = 0;
+	var liczba2 = 0;
+
+	function op(operator){
+		var wynik = 0;
+		if  (operator=='+') {
+			wynik = liczba+liczba2;
+		}
+		if  (operator=='-') {
+			wynik = liczba-liczba2;
+		}
+		if  (operator=='/') {
+			wynik = liczba/liczba2;
+		}
+		if  (operator=='*') {
+			wynik = liczba*liczba2;
+		}
+
+		alert(liczba+operator+liczba2+"="+wynik);
+	}
+
+
+
+
+	function clear() {
+		liczba = 0;
+		op = "";
+		rightOp = "";
+		show();
+	}
+
+	function add(value) {
+		liczba= liczba*10+value;
+		show();
+	}
+
+	function add2(value) {
+		liczba2= liczba2*10+value;
+		show2();
+	}
+
+	function show() {
+		document.getElementById("tekst").value = liczba;
+	}
+	function show2() {
+		document.getElementById("tekst2").value = liczba2;
+	}
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+<label for="formula">Równanie: </label><input id="formula"/><br/>	
+<label for="from">Start (x): </label><input id ="from"/><br/>
+<label for="to">Koniec (x): </label><input id="to"/><br/>
+<button onClick="solve()">Rozwiąż</button> <br/>
+
+<span id="wynik"></span>
+
+<script>
+function solve() {
+	var from = parseInt(document.getElementById("from").value);
+	var to = parseInt(document.getElementById("to").value);
+	var formula = document.getElementById("formula").value;
+	var solutions = [];
+
+
+	for (x=from;x<=to;x++ ){
+		var result = eval(formula);
+		if (result==true) {
+			solutions.push(x);
+		}
+	}
+	if (solutions.length==0) {
+		document.getElementById("wynik").innerHTML="Nie znalazłem rozwiązania.";
+	} else {
+		document.getElementById("wynik").innerHTML="Znalezione rozwiązania: "+solutions.toString();
+	}
+}
+
+</script>
+
+
+</body>
+</html>

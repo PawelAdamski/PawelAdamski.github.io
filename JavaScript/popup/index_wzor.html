@@ -6,6 +6,19 @@
 
     <style>
 
+    .ukryty { display:none; } 
+    .widoczny {dispaly:block;}
+    div {
+        background-color: grey;
+        width: 200px;
+        height: 200px;
+    }
+
+    img {
+        width:200px;
+        height:200px;
+    }
+
 
     </style>
 
@@ -15,13 +28,29 @@
     <table>
     <tr><th>Zawodnik<th>Klub<th>Reprezentacja
     <tr>
-    <td>&#x263a; Robert Lewandowski<td>Bayern Monachium<td>Polska
-    <tr><td>&#x263a; Leo Messi<td>FC Barcelona<td>Argentyna
-    <tr><td>&#x263a; Cristiano Ronaldo<td>Real Madryt<td>Portugalia
-    <tr ><td>&#x263a; Wayne Roney<td>Manchester United<td>Anglia
+    <td><span onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/7/73/Robert_Lewandowski_FCB.jpg')">&#x263a;</span> Robert Lewandowski<td>Bayern Monachium<td>Polska
+    <tr><td><span onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/8/8d/2015_UEFA_Super_Cup_64_crop.jpg')">&#x263a;</span> Leo Messi<td>FC Barcelona<td>Argentyna
+    <tr><td><span onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/0/0f/Rus-Por2012_%2816%29.jpg')">&#x263a;</span> Cristiano Ronaldo<td>Real Madryt<td>Portugalia
+    <tr ><td><span onclick="pokaz('https://upload.wikimedia.org/wikipedia/commons/0/0c/Wayne-Rooney-2015-10-21.jpg')">&#x263a;</span> Wayne Roney<td>Manchester United<td>Anglia
    
     </table>
 
   
+<div id="okienko" >
+   <img id="obrazek">
+   <button onclick="schowaj()">OK</button>
+</div>
+
+
+<script>
+function pokaz(linkObrazka){
+    document.getElementById("okienko").className = "widoczny";
+    document.getElementById("obrazek").src = linkObrazka;
+}
+function schowaj(){
+    document.getElementById("okienko").className = "ukryty"
+}
+</script>
+
 </body>
 </html>

@@ -1,0 +1,6 @@
+Korzystając z pliku zadanie1.html, wykonaj poniższe zadania:
+
+1. Napisz skrypt, który zmieni kolor tła elementu "body" na zielony.
+2. Napisz skrypt, który zmieni kolor tła wszystkich wierszy tabeli na żółty.
+3. Napisz skrypt, który ustawi klasę "pro" dla tabeli.
+4. Napisz skrypt, który wyczyści wszystkie klasy z tabeli.
