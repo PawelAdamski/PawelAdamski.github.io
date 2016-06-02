@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+  function logowanie() {
+  	document.getElementById("l1").style.display = "none"
+  	document.getElementById("l2").style.display = "block"
+  	var imie = document.getElementById("imie").value;
+  	document.getElementById("witaj").innerHTML = imie;
+  }
+
+  function przelew() {
+  	alert("przelew wysłany");
+  }
+
+</script>
+
+<h1>Bank Wrocławski</h1>
+
+<div id="l1">
+	Imię: <input id="imie">
+	<button onclick="logowanie()">Logowanie</button>
+</div>
+<div id="l2" style="display: none">
+
+	Witaj <span id="witaj"></span><br>
+	Numer konta: <input id="numerKonta"><br>
+	Kwota: <input id="kwota"><br>
+	<button onclick="przelew()">Wyślij przelew</button>
+</div>
+
+
+<span id="name"></span>
+<button onClick="showName()">Show Name
+</button>
+
+<script>
+function showName() {
+  tt = "script"
+  badCode = "John<"+tt+">function foo() {alert('boom');}</"+tt+">;
+  console.log(badCode)
+  document.getElementById("name").innerHTML = badCode;
+}
+
+
+</script>
+
+
+
+</body>
+</html>
