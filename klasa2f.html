@@ -17,6 +17,27 @@
 
     <section class="main-content">
 
+<h2>Wyświetlanie i ukrywanie elementów</h2>
+Do wyświetlania i ukrywania elementów na stronie używamy właściwości stylu o nazwie "display". Jego trzy podstawowe wartości to:
+<ul>
+<li>none
+<li>inline
+<li>block
+</ul>
+
+Zatem aby ukryć element na stronie należy napisać:
+<pre>document.getElementById("logo").style.display = "none";</pre>
+
+Aby wyświetlić element:
+<pre>document.getElementById("logo").style.display = "block"; // lub inline</pre>
+
+
+Aby element był niewidoczny po załadowaniu strony należy ustawić mu styl lokalny na  <strong>none</strong>.
+<pre>&ltimg src="fb.png" style="display:none"/>
+<br>
+<a href="JavaScript/znikanie.html">Ćwiczenie</a>
+
+<h2>DOM</h2>
 <a href="prezentacjaDOM.odp">Prezentacja</a><br>
 <a href="JavaScript/znajdowanieElementow.zip">Znajdowanie elementów</a><br>
    <h2>Piłkarze</h2>
@@ -36,7 +57,6 @@
    <h2>Funkcje</h2>
    <a href="JavaScript/zadania_funkcje.txt">Zadania</a>
 
-	
 	 <h2>Petle i Tablice</h2>
 	<a href="JavaScript/petle_tablice.zip">Zadania</a><br/>
 	<a href="obrazki.zip">Obrazki</a><br>

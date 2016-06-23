@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+td {
+	width: 150px;
+	height: 150px;
+	border: 1px solid grey;
+}
+table {
+	margin:100px auto;
+	border-collapse: collapse;
+}
+
+table img {
+	width:140px;
+	height: 140px;
+	margin: auto;
+	display: block;
+}
+
+button {
+	margin:3px auto;
+	display: block;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+#full {
+	background-color: white;
+	border: 1px solid black;
+	padding:5px;
+	position: fixed;
+	width:350px;
+	left:400px;
+	top:100px;
+}
+
+#full img {
+	width:340px;
+	height: 390px;
+		display: block;
+		margin:auto;
+}
+</style>
+</head>
+
+<body>
+
+<table>
+	<tr>
+		<td> <img src="../../Obrazki/droga.jpg" onClick="show('../../Obrazki/droga.jpg')">
+		<td> <img src="../../Obrazki/las.jpg"   onClick="show('../../Obrazki/las.jpg')">
+		<td> <img src="../../Obrazki/pole.jpg"  onClick="show('../../Obrazki/pole.jpg')">
+	<tr>
+		<td> <img src="../../Obrazki/sad.jpg" onClick="show('../../Obrazki/sad.jpg')">
+		<td> <img src="../../Obrazki/droga.jpg" onClick="show('../../Obrazki/droga.jpg')">
+		<td> <img src="../../Obrazki/pole.jpg"  onClick="show('../../Obrazki/pole.jpg')">
+
+</table>
+
+<div id="full" style="display: none">
+	<img id="fullImg">
+	<button onclick="hide()">Zamknij</button>
+</div>
+
+
+<script type="text/javascript">
+	function show(imgSrc) {
+		document.getElementById("full").style.display = "block";
+		document.getElementById("fullImg").src= imgSrc;
+	}
+
+	function hide() {
+		document.getElementById("full").style.display = "none";
+	}
+</script>
+
+
+</body>
+</html>
